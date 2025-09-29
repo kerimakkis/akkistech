@@ -1,39 +1,100 @@
-# Rock the Stage with a Smooth WebGL Shader Transformation on Scroll
+# akkistech - Innovative Software Solutions
 
-A handy setup to create a smooth scroll based GLSL animation using Three.js and GSAP.
+Professional software development agency specializing in full-stack development, AI solutions, and modern web technologies. Based in Bremen & Hamburg, Germany.
 
-![Shaders on Scroll](https://tympanus.net/codrops/wp-content/uploads/2021/07/ShadersOnScroll_Faboolea3.jpg)
+![akkistech Website](https://akkistech.com/images/akkistech-logo.png)
 
-[Article on Codrops](https://tympanus.net/codrops/?p=55223)
+## 🌟 Features
 
-[Demo](http://tympanus.net/Tutorials/ShadersOnScroll/)
+- **Modern WebGL Design** - Stunning shader-based animations
+- **Multi-language Support** - English, German, Turkish
+- **Responsive Design** - Perfect on all devices
+- **Service Pages** - Dedicated pages for each service
+- **SEO Optimized** - Professional meta tags and schema markup
+- **Fast Performance** - Optimized build with Parcel
 
+## 🚀 Services
 
-## Installation
+- 🌐 **Web Development** - React, Vue.js, WordPress, Shopify
+- 📱 **Mobile Development** - iOS, Android, React Native, Flutter
+- ⚙️ **Backend & API** - Node.js, Python, Java, GraphQL
+- 🎨 **UI/UX Design** - Figma, Adobe XD, User Research
+- ☁️ **Cloud & DevOps** - AWS, Azure, Docker, Kubernetes
+- 🔒 **Security & Compliance** - PenTest, GDPR, SSL/TLS
+- 📈 **SEO & Marketing** - Technical SEO, Analytics, Ads
+- 🤖 **AI & Data Services** - Machine Learning, NLP, Computer Vision
+- 🛠️ **Support & Maintenance** - 24/7 Support, Updates
+- 💡 **Consulting** - Digital Transformation, Strategy
+
+## 🛠️ Technology Stack
+
+- **Frontend:** Three.js, GSAP, Sass, ES6+
+- **Build Tool:** Parcel
+- **Languages:** JavaScript, GLSL Shaders
+- **Styling:** CSS3, Sass, Responsive Design
+
+## 📦 Installation
 
 Install dependencies:
 
-```
+```bash
 npm install
 ```
 
-Compile the code for development and start a local server:
+Start development server:
 
-```
+```bash
 npm start
 ```
 
-Create the build:
+Build for production:
 
-```
+```bash
 npm run build
 ```
 
-## Misc
+## 🌍 Multi-language Support
 
-Follow Codrops: [Twitter](http://www.twitter.com/codrops), [Facebook](http://www.facebook.com/codrops), [GitHub](https://github.com/codrops), [Instagram](https://www.instagram.com/codropsss/)
+The website automatically detects browser language and supports:
+- 🇬🇧 English (default)
+- 🇩🇪 German (Deutsch)
+- 🇹🇷 Turkish (Türkçe)
 
-## License
-[MIT](LICENSE)
+## 📄 Pages
 
-Made with :blue_heart:  by [Codrops](http://www.codrops.com)
+- `/` - Homepage with all services
+- `/web-development.html` - Web Development services
+- `/mobile-development.html` - Mobile App development
+- `/backend-api.html` - Backend & API services
+- `/ui-ux-design.html` - UI/UX Design services
+- `/cloud-devops.html` - Cloud & DevOps services
+- `/ai-data.html` - AI & Data Services
+
+## 📞 Contact
+
+- **Website:** [akkistech.com](https://akkistech.com)
+- **Email:** hello@akkistech.com
+- **Phone:** +49 (0) 421 123 456
+- **Location:** Bremen & Hamburg, Germany
+- **LinkedIn:** [linkedin.com/company/akkistech](https://linkedin.com/company/akkistech)
+- **GitHub:** [github.com/kerimakkis](https://github.com/kerimakkis)
+
+## 📋 Projects
+
+### Logira
+AI-Powered Analytics Platform - Advanced data visualization and machine learning insights.
+
+## 🎨 Design Credits
+
+The stunning WebGL shader effects are inspired by the original work from [Codrops](https://tympanus.net/codrops) by [Faboolea](https://twitter.com/faboolea). Original shader implementation follows MIT License.
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+**Shader Effects Attribution:**
+Original shader effects by [Codrops](https://tympanus.net/codrops) (MIT License). Adapted and customized for akkistech corporate website.
+
+---
+
+Made with ❤️ by [akkistech](https://akkistech.com) - Innovative Software Solutions
