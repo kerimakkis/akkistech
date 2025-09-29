@@ -34339,7 +34339,6 @@ const translations = {
         },
         footer: {
             tagline: "Full-Stack Development \u2022 AI Solutions \u2022 Cloud Services",
-            projects: 'Our Projects',
             company: 'Company',
             about: 'About Us',
             contact: 'Contact',
@@ -34431,7 +34430,6 @@ const translations = {
         },
         footer: {
             tagline: "Full-Stack Entwicklung \u2022 AI L\xf6sungen \u2022 Cloud Services",
-            projects: 'Unsere Projekte',
             company: 'Unternehmen',
             about: "\xdcber uns",
             contact: 'Kontakt',
@@ -34523,7 +34521,6 @@ const translations = {
         },
         footer: {
             tagline: "Full-Stack Geli\u015Ftirme \u2022 AI \xc7\xf6z\xfcmleri \u2022 Bulut Hizmetleri",
-            projects: 'Projelerimiz',
             company: "\u015Eirket",
             about: "Hakk\u0131m\u0131zda",
             contact: "\u0130leti\u015Fim",

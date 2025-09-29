@@ -82,7 +82,6 @@ export const translations = {
     },
     footer: {
       tagline: 'Full-Stack Development • AI Solutions • Cloud Services',
-      projects: 'Our Projects',
       company: 'Company',
       about: 'About Us',
       contact: 'Contact',
@@ -175,7 +174,6 @@ export const translations = {
     },
     footer: {
       tagline: 'Full-Stack Entwicklung • AI Lösungen • Cloud Services',
-      projects: 'Unsere Projekte',
       company: 'Unternehmen',
       about: 'Über uns',
       contact: 'Kontakt',
@@ -268,7 +266,6 @@ export const translations = {
     },
     footer: {
       tagline: 'Full-Stack Geliştirme • AI Çözümleri • Bulut Hizmetleri',
-      projects: 'Projelerimiz',
       company: 'Şirket',
       about: 'Hakkımızda',
       contact: 'İletişim',

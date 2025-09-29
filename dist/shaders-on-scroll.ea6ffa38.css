@@ -107,6 +107,10 @@ canvas.webgl {
   text-align: right;
 }
 
+.section:nth-child(2n) .section__title-arrow {
+  color: #fff !important;
+}
+
 @media (width <= 64em) {
   .section:nth-child(2n) {
     flex-direction: column;
@@ -221,8 +225,8 @@ canvas.webgl {
   color: #fff;
   z-index: 100;
   background: #000000f2;
-  margin-top: 2rem;
-  padding: 4rem 2rem 2rem;
+  margin-top: .5rem;
+  padding: 1.5rem 2rem 1rem;
   position: relative;
 }
 
@@ -421,8 +425,8 @@ canvas.webgl {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  margin-top: 3rem;
-  padding-top: 2rem;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
   display: flex;
 }
 
@@ -469,6 +473,10 @@ canvas.webgl {
   background: linear-gradient(135deg, #dd51b126 0%, #0101ec1a 100%);
 }
 
+.section--highlight .section__title-arrow {
+  color: #fff !important;
+}
+
 .section--contact {
   z-index: 10;
   background: linear-gradient(135deg, #0101ec33 0%, #dd51b11a 100%);
@@ -488,11 +496,11 @@ canvas.webgl {
   }
 
   .footer {
-    padding: 3rem 1rem 1.5rem;
+    padding: 1rem 1rem .5rem;
   }
 
   .footer__content {
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
   .footer__social {

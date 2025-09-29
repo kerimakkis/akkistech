@@ -108,6 +108,9 @@ canvas.webgl
     
     .section__title
       text-align: right
+      
+      &-arrow
+        color: $color-white !important
 
     @media (max-width: 64em)
       flex-direction: column
@@ -207,8 +210,8 @@ canvas.webgl
   background: rgba(0, 0, 0, 0.95)
   backdrop-filter: blur(10px)
   color: $color-white
-  padding: 4rem 2rem 2rem
-  margin-top: 2rem
+  padding: 1.5rem 2rem 1rem
+  margin-top: 0.5rem
   position: relative
   z-index: 100
 
@@ -379,8 +382,8 @@ canvas.webgl
 
   &__bottom
     border-top: 1px solid rgba(255, 255, 255, 0.1)
-    margin-top: 3rem
-    padding-top: 2rem
+    margin-top: 1.5rem
+    padding-top: 1rem
     display: flex
     justify-content: space-between
     align-items: center
@@ -421,6 +424,9 @@ canvas.webgl
 
   &--highlight
     background: linear-gradient(135deg, rgba($color-2, 0.15) 0%, rgba($color-1, 0.1) 100%)
+    
+    .section__title-arrow
+      color: $color-white !important
 
   &--contact
     background: linear-gradient(135deg, rgba($color-1, 0.2) 0%, rgba($color-2, 0.1) 100%)
@@ -441,10 +447,10 @@ canvas.webgl
 // Responsive Typography
 @media (max-width: 64em)
   .footer
-    padding: 3rem 1rem 1.5rem
+    padding: 1rem 1rem 0.5rem
     
     &__content
-      gap: 1.5rem
+      gap: 1rem
     
     &__social
       justify-content: center
