@@ -79,22 +79,7 @@
 	</head>
 	<body class="loading">
 		<main>
-			<div class="frame">
-				<div class="frame__title-wrap">
-					<h1 class="frame__title">akkistech</h1>
-					<span class="frame__tagline">Innovative Software Solutions</span>
-				</div>
-				<nav class="frame__links">
-					<a href="#services" data-translate="nav.services">Services</a>
-					<a href="#contact" data-translate="nav.contact">Contact</a>
-					<a href="#about" data-translate="nav.about">About</a>
-				</nav>
-				<div class="frame__language">
-					<button class="lang-btn active" data-lang="en">EN</button>
-					<button class="lang-btn" data-lang="de">DE</button>
-					<button class="lang-btn" data-lang="tr">TR</button>
-				</div>
-			</div>
+			<div id="site-header"></div>
 			<div class="content">
 				<div class="scroll__stage">
 					<div class="scroll__content" id="services">
@@ -293,86 +278,9 @@
 			</div>
 		</main>
 		
-		<!-- Footer -->
-		<footer class="footer">
-					<div class="footer__content">
-						<div class="footer__section footer__section--brand">
-							<h4>akkistech</h4>
-							<p>Innovative Software Solutions<br>Bremen & Hamburg, Deutschland</p>
-							<p class="footer__tagline">Full-Stack Development • AI Solutions • Cloud Services</p>
-							<div class="footer__social">
-								<a href="https://linkedin.com/company/akkistech" target="_blank" rel="noopener" aria-label="LinkedIn">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-										<path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-									</svg>
-								</a>
-								<a href="https://github.com/akkistech" target="_blank" rel="noopener" aria-label="GitHub">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-										<path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-									</svg>
-								</a>
-								<a href="https://twitter.com/akkistech" target="_blank" rel="noopener" aria-label="Twitter/X">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-										<path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-									</svg>
-								</a>
-								<a href="https://www.xing.com/profile/akkistech" target="_blank" rel="noopener" aria-label="XING">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-										<path d="M18.188 0c-.517 0-.741.325-.927.66 0 0-7.455 13.224-7.702 13.657.284.52 4.56 8.668 4.56 8.668.214.364.451.683.977.683h3.454c.518 0 .766-.348.766-.348s-4.31-8.175-4.31-8.175c-.1-.17-.1-.17 0-.17 0 0 7.42-13.395 7.42-13.395.1-.17.1-.17 0-.17zM6.826 0c-.518 0-.766.348-.766.348S1.75 8.682 1.75 8.682c-.1.17-.1.17 0 .17 0 0 2.644 4.553 2.644 4.553.214.364.451.683.977.683H8.825c.518 0 .766-.348.766-.348S6.947 9.187 6.947 9.187c-.1-.17-.1-.17 0-.17 0 0 2.644-4.553 2.644-4.553C9.805 4.1 9.805 4.1 9.591 3.736L6.826 0z"/>
-									</svg>
-								</a>
-								<a href="mailto:hello@akkistech.com" aria-label="E-Mail">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-										<path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-									</svg>
-								</a>
-								<a href="tel:+494211234567" aria-label="Telefon">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-										<path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
-									</svg>
-								</a>
-							</div>
-						</div>
-						
-						<div class="footer__section">
-							<h4>Services</h4>
-							<ul>
-								<li><a href="#services">Web Development</a></li>
-								<li><a href="#services">Mobile Apps</a></li>
-								<li><a href="#services">AI Solutions</a></li>
-								<li><a href="#services">Cloud Services</a></li>
-							</ul>
-						</div>
-						
-						<div class="footer__section">
-							<h4>Unternehmen</h4>
-							<ul>
-								<li><a href="#about">Über uns</a></li>
-								<li><a href="#contact">Kontakt</a></li>
-								<li><a href="/impressum">Impressum</a></li>
-								<li><a href="/datenschutz">Datenschutz</a></li>
-							</ul>
-						</div>
-						
-						<div class="footer__section">
-							<h4>Kontakt</h4>
-							<p>
-								<strong>E-Mail:</strong> hello@akkistech.com<br>
-								<strong>Telefon:</strong> +49 (0) 421 123 456<br>
-								<strong>Bremen:</strong> Überseestadt<br>
-								<strong>Hamburg:</strong> HafenCity
-							</p>
-						</div>
-					</div>
-					
-					<div class="footer__bottom">
-						<p>&copy; 2024 akkistech. Alle Rechte vorbehalten.</p>
-						<p class="footer__credits">
-							inspired by <a href="https://tympanus.net/codrops" target="_blank">Codrops</a> 
-						</p>
-					</div>
-		</footer>
+		<div id="site-footer"></div>
 		
+		<script type="module" src="./app/layout.js"></script>
 		<script type="module" src="./app/index.js"></script>
 	</body>
 </html>

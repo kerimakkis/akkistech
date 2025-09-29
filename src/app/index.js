@@ -194,7 +194,13 @@ class ScrollStage {
     document.body.classList.remove('loading')
 
     this.animations = new Animations(this.element, this.camera)
-    this.languageManager = new LanguageManager()
+    if (document.querySelector('.lang-btn')) {
+      this.languageManager = new LanguageManager()
+    } else {
+      window.addEventListener('layout:ready', () => {
+        this.languageManager = new LanguageManager()
+      }, { once: true })
+    }
   }
 
   onMouseMove(event) {
