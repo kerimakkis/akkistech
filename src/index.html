@@ -1,82 +1,357 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="de" class="no-js">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Shaders on Scroll | Codrops</title>
-		<meta name="description" content="Smooth WebGL Shader Transformations on Scroll – A handy setup to create a smooth scroll based GLSL animation using Three.js and GSAP. @Faboolea" />
-		<meta name="keywords" content="webgl, three.js, on scroll, animation, three.js, gsap, javascript" />
-		<meta name="author" content="ꜰᴀʙᴏᴏʟᴇᴀ for Codrops" />
+		
+		<!-- SEO & Meta Tags -->
+		<title>akkistech - Innovative Software Solutions | Full-Stack Development & AI Services</title>
+		<meta name="description" content="Professionelle Software-Entwicklung, AI-Lösungen, Web & Mobile Development, Cloud Services und Digital Transformation. Bremen, Hamburg, Deutschland." />
+		<meta name="keywords" content="software development, full-stack, AI solutions, web development, mobile apps, cloud services, bremen, hamburg, deutschland, software agency" />
+		<meta name="author" content="akkistech Software Agency" />
+		<meta name="robots" content="index, follow" />
+		<meta name="language" content="German" />
+		<meta name="geo.region" content="DE-HB" />
+		<meta name="geo.placename" content="Bremen, Hamburg" />
+		
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://akkistech.com/" />
+		<meta property="og:title" content="akkistech - Innovative Software Solutions" />
+		<meta property="og:description" content="Professional Software Development, AI Solutions, Web & Mobile Apps. Bremen & Hamburg, Deutschland." />
+		<meta property="og:image" content="https://akkistech.com/images/akkistech-logo.png" />
+		<meta property="og:site_name" content="akkistech" />
+		<meta property="og:locale" content="de_DE" />
+		
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://akkistech.com/" />
+		<meta property="twitter:title" content="akkistech - Innovative Software Solutions" />
+		<meta property="twitter:description" content="Professional Software Development, AI Solutions, Web & Mobile Apps. Bremen & Hamburg." />
+		<meta property="twitter:image" content="https://akkistech.com/images/akkistech-logo.png" />
+		
+		<!-- Favicon & Icons -->
 		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/akkistech-logo.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./images/akkistech-logo.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="./images/akkistech-logo.png">
+		<meta name="theme-color" content="#0101ec">
+		
+		<!-- Preconnect for Performance -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://use.typekit.net">
+		
+		<!-- Stylesheets -->
 		<link rel="stylesheet" type="text/css" href="./styles/base.css" />
 		<link rel="stylesheet" type="text/css" href="./styles/shaders-on-scroll.sass" />
+		
+		<!-- JSON-LD Schema Markup -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Organization",
+			"name": "akkistech",
+			"url": "https://akkistech.com",
+			"logo": "https://akkistech.com/images/akkistech-logo.png",
+			"description": "Professional Software Development Agency specializing in AI Solutions, Web & Mobile Development, Cloud Services",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Bremen",
+				"addressRegion": "Bremen",
+				"addressCountry": "DE"
+			},
+			"contactPoint": {
+				"@type": "ContactPoint",
+				"telephone": "+49-421-123456",
+				"contactType": "customer service",
+				"email": "hello@akkistech.com"
+			},
+			"sameAs": [
+				"https://linkedin.com/company/akkistech",
+				"https://github.com/akkistech",
+				"https://twitter.com/akkistech"
+			]
+		}
+		</script>
+		
+		<!-- Browser Support Check -->
 		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
-		<!--script src="//tympanus.net/codrops/adpacks/analytics.js"></script-->
 	</head>
 	<body class="loading">
 		<main>
 			<div class="frame">
 				<div class="frame__title-wrap">
-					<h1 class="frame__title">Smooth WebGL Shader Transformations on Scroll</h1>
+					<h1 class="frame__title">akkistech</h1>
+					<span class="frame__tagline">Innovative Software Solutions</span>
 				</div>
 				<nav class="frame__links">
-					<a href="https://tympanus.net/Tutorials/MarqueeMenu/">Previous demo</a>
-					<a href="https://tympanus.net/codrops/?p=55223">Article</a>
-					<a href="https://github.com/Faboolea/shaders-on-scroll">GitHub</a>
+					<a href="#services" data-translate="nav.services">Services</a>
+					<a href="#contact" data-translate="nav.contact">Contact</a>
+					<a href="#about" data-translate="nav.about">About</a>
 				</nav>
+				<div class="frame__language">
+					<button class="lang-btn active" data-lang="en">EN</button>
+					<button class="lang-btn" data-lang="de">DE</button>
+					<button class="lang-btn" data-lang="tr">TR</button>
+				</div>
 			</div>
 			<div class="content">
 				<div class="scroll__stage">
-					<div class="scroll__content">
-						<section class="section">
+					<div class="scroll__content" id="services">
+						<!-- Hero Section -->
+						<section class="section section--hero">
 							<div class="section__title">
 								<h1 class="section__title-number">01</h1>
-								<h2 class="section__title-text">Logma</h2>
+								<h2 class="section__title-text" data-translate="services.web.title">Web</h2>
 								<p class="section__title-arrow">
 									<span>➤</span><br>
 									<span>➤</span>
 								</p>
 							</div>
-							<p class="section__paragraph">
-								The fireball that we rode was moving –
-								But now we've got a new machine – 
-								They got music in the solar system<br>
-								<a href="https://dimorph.ch/" class="section__button">Discover</a>
-							</p>
+							<div class="section__paragraph">
+								<h3 data-translate="services.web.heading">Web Development</h3>
+								<p data-translate="services.web.description">Corporate websites, E-Commerce solutions, Landing pages, CMS integration, Web performance optimization</p>
+								<a href="web-development.html" class="section__button" data-translate="services.web.cta">Learn More</a>
+							</div>
 						</section>
+
+						<!-- Mobile Development -->
 						<section class="section">
 							<div class="section__title">
 								<h1 class="section__title-number">02</h1>
-								<h2 class="section__title-text">Naos</h2>
+								<h2 class="section__title-text">Mobile</h2>
 							</div>
-							<p class="section__paragraph">
-								Let me take you on a little trip – 
-								We're gonna travel faster than light – 
-								And you'll go anywhere you want to decide<br>
-								<a href="https://dimorph.ch/" class="section__button">Discover</a>
-							</p>
+							<div class="section__paragraph">
+								<h3>Mobile Development</h3>
+								<p>iOS & Android Apps, React Native, Flutter, PWA, App Store Publishing, IoT Integration</p>
+								<a href="mobile-development.html" class="section__button">Learn More</a>
+							</div>
 						</section>
+
+						<!-- Backend & API -->
 						<section class="section">
 							<div class="section__title">
 								<h1 class="section__title-number">03</h1>
-								<h2 class="section__title-text">Chara</h2>
+								<h2 class="section__title-text">Backend</h2>
 							</div>
-							<p class="section__paragraph">
-								Close your eyes now – 
-								And give in to the night – 
-								Soar above the stars – 
-								Forget what's behind<br>
-								<a href="https://dimorph.ch/" class="section__button">Discover</a>
-							</p>
+							<div class="section__paragraph">
+								<h3>Backend & API Services</h3>
+								<p>Custom Backend, REST & GraphQL APIs, Database Design, ERP/CRM Integration, Microservices</p>
+								<a href="backend-api.html" class="section__button">Learn More</a>
+							</div>
+						</section>
+
+						<!-- UI/UX Design -->
+						<section class="section">
+							<div class="section__title">
+								<h1 class="section__title-number">04</h1>
+								<h2 class="section__title-text">Design</h2>
+							</div>
+							<div class="section__paragraph">
+								<h3>UI/UX & Design</h3>
+								<p>User Interface Design, Prototyping, UX Research, Corporate Identity, Animation & Micro-interactions</p>
+								<a href="ui-ux-design.html" class="section__button">Learn More</a>
+							</div>
+						</section>
+
+						<!-- Cloud & DevOps -->
+						<section class="section">
+							<div class="section__title">
+								<h1 class="section__title-number">05</h1>
+								<h2 class="section__title-text">Cloud</h2>
+							</div>
+							<div class="section__paragraph">
+								<h3>Cloud & DevOps</h3>
+								<p>AWS, Azure, GCP, Docker, Kubernetes, CI/CD Pipelines, High Availability, Disaster Recovery</p>
+								<a href="cloud-devops.html" class="section__button">Learn More</a>
+							</div>
+						</section>
+
+						<!-- Security -->
+						<section class="section">
+							<div class="section__title">
+								<h1 class="section__title-number">06</h1>
+								<h2 class="section__title-text">Security</h2>
+							</div>
+							<div class="section__paragraph">
+								<h3>Sicherheit & Compliance</h3>
+								<p>PenTest, Vulnerability Scans, SSL/TLS, WAF, DDoS Protection, GDPR Compliance, Data Encryption</p>
+								<a href="#contact" class="section__button">Security Audit</a>
+							</div>
+						</section>
+
+						<!-- SEO & Marketing -->
+						<section class="section">
+							<div class="section__title">
+								<h1 class="section__title-number">07</h1>
+								<h2 class="section__title-text">SEO</h2>
+							</div>
+							<div class="section__paragraph">
+								<h3>SEO & Digital Marketing</h3>
+								<p>Technical SEO, Content Strategy, Google Analytics, Online Advertising, Social Media Integration</p>
+								<a href="#contact" class="section__button">SEO Analyse</a>
+							</div>
+						</section>
+
+						<!-- AI & Data Services -->
+						<section class="section section--highlight">
+							<div class="section__title">
+								<h1 class="section__title-number">08</h1>
+								<h2 class="section__title-text">AI</h2>
+							</div>
+							<div class="section__paragraph">
+								<h3>AI & Data Services</h3>
+								<p>AI Chatbots, Recommendation Systems, NLP, Computer Vision, Data Science, Predictive Analytics, RPA</p>
+								<a href="ai-data.html" class="section__button">Learn More</a>
+							</div>
+						</section>
+
+						<!-- Support & Maintenance -->
+						<section class="section">
+							<div class="section__title">
+								<h1 class="section__title-number">09</h1>
+								<h2 class="section__title-text">Support</h2>
+							</div>
+							<div class="section__paragraph">
+								<h3>Wartung & Support</h3>
+								<p>Hosting Management, Software Updates, 24/7 SLA Support, Bug Fixes, User Training</p>
+								<a href="#contact" class="section__button">Support anfragen</a>
+							</div>
+						</section>
+
+						<!-- Consulting -->
+						<section class="section">
+							<div class="section__title">
+								<h1 class="section__title-number">10</h1>
+								<h2 class="section__title-text">Consulting</h2>
+							</div>
+							<div class="section__paragraph">
+								<h3>Beratung & Strategie</h3>
+								<p>Digital Transformation, Technology Consulting, Product Strategy, Agile Coaching, AI-Ready Planning</p>
+								<a href="#contact" class="section__button">Beratung buchen</a>
+							</div>
+						</section>
+
+						<!-- Contact Section -->
+						<section class="section section--contact" id="contact">
+							<div class="section__title">
+								<h1 class="section__title-number">✉</h1>
+								<h2 class="section__title-text">Kontakt</h2>
+							</div>
+							<div class="section__paragraph">
+								<h3>Lassen Sie uns sprechen</h3>
+								<p>Bereit für Ihr nächstes Projekt?<br>
+								Kontaktieren Sie unser Expertenteam.</p>
+								<div class="contact-info">
+									<p><strong>Email:</strong> hello@akkistech.com</p>
+									<p><strong>Telefon:</strong> +49 (0) 421 123 456</p>
+									<p><strong>Standort:</strong> Bremen & Hamburg</p>
+								</div>
+								<a href="mailto:hello@akkistech.com" class="section__button">E-Mail senden</a>
+							</div>
 						</section>
 						
 					</div>
 				</div>
 				<div class="layout__line"></div>
-				<div class="layout__faboolea"><a class="layout__faboolea-link" href="https://twitter.com/faboolea">Made by &nbsp; ꜰᴀʙᴏᴏʟᴇᴀ</a></div>
 			</div>
 		</main>
-		<script src="./app/index.js"></script>
-		<!--script src="https://tympanus.net/codrops/adpacks/cda.js"></script-->
+		
+		<!-- Footer -->
+		<footer class="footer">
+					<div class="footer__content">
+						<div class="footer__section footer__section--brand">
+							<h4>akkistech</h4>
+							<p>Innovative Software Solutions<br>Bremen & Hamburg, Deutschland</p>
+							<p class="footer__tagline">Full-Stack Development • AI Solutions • Cloud Services</p>
+							<div class="footer__social">
+								<a href="https://linkedin.com/company/akkistech" target="_blank" rel="noopener" aria-label="LinkedIn">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+										<path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+									</svg>
+								</a>
+								<a href="https://github.com/akkistech" target="_blank" rel="noopener" aria-label="GitHub">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+										<path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+									</svg>
+								</a>
+								<a href="https://twitter.com/akkistech" target="_blank" rel="noopener" aria-label="Twitter/X">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+										<path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+									</svg>
+								</a>
+								<a href="https://www.xing.com/profile/akkistech" target="_blank" rel="noopener" aria-label="XING">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+										<path d="M18.188 0c-.517 0-.741.325-.927.66 0 0-7.455 13.224-7.702 13.657.284.52 4.56 8.668 4.56 8.668.214.364.451.683.977.683h3.454c.518 0 .766-.348.766-.348s-4.31-8.175-4.31-8.175c-.1-.17-.1-.17 0-.17 0 0 7.42-13.395 7.42-13.395.1-.17.1-.17 0-.17zM6.826 0c-.518 0-.766.348-.766.348S1.75 8.682 1.75 8.682c-.1.17-.1.17 0 .17 0 0 2.644 4.553 2.644 4.553.214.364.451.683.977.683H8.825c.518 0 .766-.348.766-.348S6.947 9.187 6.947 9.187c-.1-.17-.1-.17 0-.17 0 0 2.644-4.553 2.644-4.553C9.805 4.1 9.805 4.1 9.591 3.736L6.826 0z"/>
+									</svg>
+								</a>
+								<a href="mailto:hello@akkistech.com" aria-label="E-Mail">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+										<path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+									</svg>
+								</a>
+								<a href="tel:+494211234567" aria-label="Telefon">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+										<path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+						
+						<div class="footer__section">
+							<h4>Services</h4>
+							<ul>
+								<li><a href="#services">Web Development</a></li>
+								<li><a href="#services">Mobile Apps</a></li>
+								<li><a href="#services">AI Solutions</a></li>
+								<li><a href="#services">Cloud Services</a></li>
+							</ul>
+						</div>
+						
+						<div class="footer__section">
+							<h4 data-translate="footer.projects">Our Projects</h4>
+							<div class="footer__projects">
+								<div class="project-item">
+									<img src="./images/logira-logo.png" alt="Logira AI" class="project-logo">
+									<div class="project-info">
+										<h5>Logira</h5>
+										<p>AI-Powered Analytics Platform</p>
+										<a href="https://logira.com" target="_blank" rel="noopener">Visit →</a>
+									</div>
+								</div>
+								<!-- Future projects can be added here -->
+							</div>
+						</div>
+						
+						<div class="footer__section">
+							<h4>Unternehmen</h4>
+							<ul>
+								<li><a href="#about">Über uns</a></li>
+								<li><a href="#contact">Kontakt</a></li>
+								<li><a href="/impressum">Impressum</a></li>
+								<li><a href="/datenschutz">Datenschutz</a></li>
+							</ul>
+						</div>
+						
+						<div class="footer__section">
+							<h4>Kontakt</h4>
+							<p>
+								<strong>E-Mail:</strong> hello@akkistech.com<br>
+								<strong>Telefon:</strong> +49 (0) 421 123 456<br>
+								<strong>Bremen:</strong> Überseestadt<br>
+								<strong>Hamburg:</strong> HafenCity
+							</p>
+						</div>
+					</div>
+					
+					<div class="footer__bottom">
+						<p>&copy; 2024 akkistech. Alle Rechte vorbehalten.</p>
+						<p class="footer__credits">
+							Shader effects inspired by <a href="https://tympanus.net/codrops" target="_blank">Codrops</a> (MIT License)
+						</p>
+					</div>
+		</footer>
+		
+		<script type="module" src="./app/index.js"></script>
 	</body>
 </html>

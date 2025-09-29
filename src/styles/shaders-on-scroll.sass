@@ -38,11 +38,7 @@ $color-white: white
 body
   @extend %font-regular
 
-  width: 100%
-  height: 100vh
   overscroll-behavior: none
-  color: $color-white
-  background-color: $color-black
   line-height: 1.2
   
   &::-webkit-scrollbar
@@ -57,6 +53,7 @@ canvas.webgl
 
   pointer-events: none
   mix-blend-mode: screen
+  z-index: 50
 
   @media (max-width: 64em)
       opacity: .7
@@ -79,6 +76,7 @@ canvas.webgl
     @extend %absolute
 
     will-change: transform
+    padding-bottom: 5rem
 
 .section
   display: flex
@@ -86,7 +84,9 @@ canvas.webgl
   align-items: center
   width: 100%
   min-height: calc(100vh - 7rem)
-  padding: 8rem 
+  padding: 8rem
+  position: relative
+  z-index: 10 
   
   @media (max-width: 64em)
     flex-direction: column
@@ -104,6 +104,7 @@ canvas.webgl
   &:nth-child(even)
     flex-direction: row-reverse
     background: $color-1
+    z-index: 5
     
     .section__title
       text-align: right
@@ -139,6 +140,25 @@ canvas.webgl
       span
         display: inline-block
         transform: rotate(90deg)
+
+    &-logo
+      display: flex
+      justify-content: center
+      align-items: center
+      margin-top: 1ch
+      
+      .ai-logo
+        max-width: min(20vw, 12rem)
+        max-height: min(20vw, 12rem)
+        width: auto
+        height: auto
+        object-fit: contain
+        filter: brightness(1.2) contrast(1.1)
+        transition: all 0.3s ease
+        
+        &:hover
+          transform: scale(1.05)
+          filter: brightness(1.4) contrast(1.2)
     
   &__paragraph
     align-self: flex-end
@@ -181,3 +201,356 @@ canvas.webgl
     height: .5rem
     width: 100%
     text-align: center
+
+// Footer Styles
+.footer
+  background: rgba(0, 0, 0, 0.95)
+  backdrop-filter: blur(10px)
+  color: $color-white
+  padding: 4rem 2rem 2rem
+  margin-top: 2rem
+  position: relative
+  z-index: 100
+
+  &__content
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+    gap: 2rem
+    max-width: 1200px
+    margin: 0 auto
+
+    @media (max-width: 768px)
+      grid-template-columns: 1fr
+      gap: 2rem
+
+  &__section
+    h4
+      @extend %font-title
+      font-size: 1.2rem
+      margin-bottom: 1rem
+      color: $color-1
+
+    p
+      line-height: 1.6
+      margin-bottom: 1rem
+      opacity: 0.9
+
+    ul
+      list-style: none
+      padding: 0
+
+      li
+        margin-bottom: 0.5rem
+
+        a
+          color: $color-white
+          text-decoration: none
+          opacity: 0.8
+          transition: opacity 0.3s ease
+
+          &:hover
+            opacity: 1
+            color: $color-1
+
+  &__social
+    display: flex
+    gap: 1rem
+    margin-top: 1.5rem
+    flex-wrap: wrap
+
+    a
+      color: $color-white
+      text-decoration: none
+      padding: 0.75rem
+      border: 1px solid rgba(255, 255, 255, 0.2)
+      border-radius: 8px
+      transition: all 0.3s ease
+      display: flex
+      align-items: center
+      justify-content: center
+      background: rgba(255, 255, 255, 0.05)
+      backdrop-filter: blur(10px)
+
+      svg
+        width: 20px
+        height: 20px
+        transition: transform 0.3s ease
+
+      &:hover
+        border-color: $color-1
+        color: $color-1
+        background: rgba($color-1, 0.1)
+        transform: translateY(-2px)
+        box-shadow: 0 4px 12px rgba($color-1, 0.3)
+
+        svg
+          transform: scale(1.1)
+
+      &[href*="linkedin"]:hover
+        border-color: #0077b5
+        color: #0077b5
+        background: rgba(#0077b5, 0.1)
+        box-shadow: 0 4px 12px rgba(#0077b5, 0.3)
+
+      &[href*="github"]:hover
+        border-color: #333
+        color: #333
+        background: rgba(#333, 0.1)
+        box-shadow: 0 4px 12px rgba(#333, 0.3)
+
+      &[href*="twitter"]:hover,
+      &[href*="x.com"]:hover
+        border-color: #1da1f2
+        color: #1da1f2
+        background: rgba(#1da1f2, 0.1)
+        box-shadow: 0 4px 12px rgba(#1da1f2, 0.3)
+
+      &[href*="xing"]:hover
+        border-color: #026466
+        color: #026466
+        background: rgba(#026466, 0.1)
+        box-shadow: 0 4px 12px rgba(#026466, 0.3)
+
+      &[href*="mailto"]:hover
+        border-color: $color-2
+        color: $color-2
+        background: rgba($color-2, 0.1)
+        box-shadow: 0 4px 12px rgba($color-2, 0.3)
+
+      &[href*="tel"]:hover
+        border-color: #4caf50
+        color: #4caf50
+        background: rgba(#4caf50, 0.1)
+        box-shadow: 0 4px 12px rgba(#4caf50, 0.3)
+
+  &__section--brand
+    .footer__tagline
+      font-size: 0.9rem
+      opacity: 0.8
+      margin-top: 0.5rem
+      font-style: italic
+
+  &__projects
+    .project-item
+      display: flex
+      align-items: center
+      gap: 1rem
+      padding: 1rem
+      background: rgba(255, 255, 255, 0.05)
+      border-radius: 8px
+      margin-bottom: 1rem
+      transition: all 0.3s ease
+
+      &:hover
+        background: rgba($color-1, 0.1)
+        transform: translateY(-2px)
+
+      .project-logo
+        width: 50px
+        height: 50px
+        object-fit: contain
+        border-radius: 6px
+        background: rgba(255, 255, 255, 0.1)
+        padding: 8px
+
+      .project-info
+        flex: 1
+
+        h5
+          @extend %font-title
+          margin: 0 0 0.25rem 0
+          font-size: 1.1rem
+          color: $color-white
+
+        p
+          margin: 0 0 0.5rem 0
+          font-size: 0.85rem
+          opacity: 0.8
+
+        a
+          color: $color-1
+          text-decoration: none
+          font-size: 0.85rem
+          font-weight: 500
+          transition: color 0.3s ease
+
+          &:hover
+            color: $color-2
+
+  &__bottom
+    border-top: 1px solid rgba(255, 255, 255, 0.1)
+    margin-top: 3rem
+    padding-top: 2rem
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    gap: 1rem
+
+    @media (max-width: 768px)
+      flex-direction: column
+      text-align: center
+
+    p
+      margin: 0
+      opacity: 0.7
+      font-size: 0.9rem
+
+  &__credits
+    font-size: 0.8rem !important
+
+    a
+      color: $color-2
+      text-decoration: none
+
+      &:hover
+        text-decoration: underline
+
+// Contact Info Styling
+.contact-info
+  margin: 2rem 0
+  
+  p
+    margin: 0.5rem 0
+    font-size: 1rem
+
+// Section Enhancements
+.section
+  &--hero
+    background: linear-gradient(135deg, rgba($color-1, 0.1) 0%, rgba($color-2, 0.05) 100%)
+
+  &--highlight
+    background: linear-gradient(135deg, rgba($color-2, 0.15) 0%, rgba($color-1, 0.1) 100%)
+
+  &--contact
+    background: linear-gradient(135deg, rgba($color-1, 0.2) 0%, rgba($color-2, 0.1) 100%)
+    margin-bottom: 3rem
+    position: relative
+    z-index: 10
+
+  &__paragraph
+    h3
+      @extend %font-title
+      font-size: 1.8rem
+      margin-bottom: 1rem
+      color: $color-white
+
+      @media (max-width: 64em)
+        font-size: 1.5rem
+
+// Responsive Typography
+@media (max-width: 64em)
+  .footer
+    padding: 3rem 1rem 1.5rem
+    
+    &__content
+      gap: 1.5rem
+    
+    &__social
+      justify-content: center
+
+// Language Switcher Styles
+.frame__language
+  display: flex
+  gap: 0.5rem
+  margin-left: 1rem
+
+  @media screen and (min-width: 53em)
+    position: fixed
+    top: 1.75rem
+    right: 1.75rem
+    margin: 0
+    z-index: 1001
+
+.lang-btn
+  @extend %font-regular
+  
+  background: rgba(255, 255, 255, 0.1)
+  border: 1px solid rgba(255, 255, 255, 0.3)
+  color: $color-white
+  padding: 0.5rem 0.75rem
+  border-radius: 4px
+  cursor: pointer
+  font-size: 0.8rem
+  font-weight: 500
+  letter-spacing: 0.1ch
+  transition: all 0.3s ease
+  backdrop-filter: blur(10px)
+
+  &:hover
+    background: rgba($color-1, 0.2)
+    border-color: $color-1
+    color: $color-1
+    transform: translateY(-1px)
+
+  &.active
+    background: $color-1
+    border-color: $color-1
+    color: $color-white
+    box-shadow: 0 2px 8px rgba($color-1, 0.4)
+
+  &:active
+    transform: translateY(0)
+
+// Service Page Specific Styles
+.service-list
+  list-style: none
+  padding: 0
+  margin: 1rem 0
+  
+  li
+    padding: 0.5rem 0
+    font-size: 1.1rem
+    opacity: 0.9
+    
+    &:hover
+      opacity: 1
+
+.tech-grid
+  display: grid
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))
+  gap: 1rem
+  margin: 1rem 0
+
+.tech-item
+  background: rgba($color-1, 0.1)
+  border: 1px solid rgba($color-1, 0.3)
+  padding: 1rem
+  border-radius: 8px
+  text-align: center
+  font-weight: 500
+  transition: all 0.3s ease
+  
+  &:hover
+    background: rgba($color-1, 0.2)
+    transform: translateY(-2px)
+    box-shadow: 0 4px 12px rgba($color-1, 0.3)
+
+.process-steps
+  display: flex
+  flex-direction: column
+  gap: 1.5rem
+  margin: 2rem 0
+  
+  @media (min-width: 768px)
+    flex-direction: row
+    flex-wrap: wrap
+
+.step
+  flex: 1
+  min-width: 200px
+  background: rgba(255, 255, 255, 0.05)
+  padding: 1.5rem
+  border-radius: 8px
+  border-left: 4px solid $color-1
+  
+  h4
+    @extend %font-title
+    margin: 0 0 0.5rem 0
+    color: $color-1
+    font-size: 1.2rem
+  
+  p
+    margin: 0
+    opacity: 0.8
+    font-size: 0.9rem

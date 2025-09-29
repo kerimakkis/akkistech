@@ -3,6 +3,7 @@ import GSAP from 'gsap'
 
 import Animations from './Animations'
 import SmoothScroll from './SmoothScroll'
+import { LanguageManager } from './translations'
 
 import vertexShader from './shaders/vertex.glsl'
 import fragmentShader from './shaders/fragment.glsl'
@@ -193,6 +194,7 @@ class ScrollStage {
     document.body.classList.remove('loading')
 
     this.animations = new Animations(this.element, this.camera)
+    this.languageManager = new LanguageManager()
   }
 
   onMouseMove(event) {
@@ -265,4 +267,5 @@ class ScrollStage {
 
 new ScrollStage()
 
-console.log('%c Made by ꜰᴀʙᴏᴏʟᴇᴀ → https://twitter.com/faboolea', 'background: black; color: white; padding: 1ch 2ch; border-radius: 2rem;')
+console.log('%c akkistech - Innovative Software Solutions → https://akkistech.com', 'background: #0101ec; color: white; padding: 1ch 2ch; border-radius: 2rem; font-weight: bold;')
+console.log('%c Shader effects inspired by Codrops (MIT License)', 'background: #333; color: #ccc; padding: 0.5ch 1ch; border-radius: 1rem; font-size: 0.8em;')
