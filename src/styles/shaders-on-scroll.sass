@@ -76,7 +76,7 @@ canvas.webgl
     @extend %absolute
 
     will-change: transform
-    padding-bottom: 5rem
+    padding-bottom: 8rem
 
 .section
   display: flex
@@ -207,8 +207,8 @@ canvas.webgl
 
 // Footer Styles
 .footer
-  background: rgba(0, 0, 0, 0.95)
-  backdrop-filter: blur(10px)
+  background: transparent
+  backdrop-filter: none
   color: $color-white
   padding: 1.5rem 2rem 1rem
   margin-top: 0.5rem
@@ -430,7 +430,7 @@ canvas.webgl
 
   &--contact
     background: linear-gradient(135deg, rgba($color-1, 0.2) 0%, rgba($color-2, 0.1) 100%)
-    margin-bottom: 3rem
+    margin-bottom: 6rem
     position: relative
     z-index: 10
 
@@ -462,6 +462,7 @@ canvas.webgl
   text-align: center
   z-index: 1000
   padding: 3rem 5vw
+  background: transparent
   
   @media screen and (min-width: 53em)
     text-align: left
