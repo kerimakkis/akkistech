@@ -68,7 +68,11 @@ The website automatically detects browser language and supports:
 - `/backend-api.html` - Backend & API services
 - `/ui-ux-design.html` - UI/UX Design services
 - `/cloud-devops.html` - Cloud & DevOps services
+- `/security.html` - Security & Compliance services
+- `/seo-marketing.html` - SEO & Digital Marketing
 - `/ai-data.html` - AI & Data Services
+- `/support.html` - Support & Maintenance
+- `/consulting.html` - Consulting & Strategy
 
 ## 📞 Contact
 
