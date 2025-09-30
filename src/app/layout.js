@@ -1,3 +1,6 @@
+// Use src folder path
+const logoUrl = './akkisTechLogo.png';
+
 function getHeaderHTML(tagline = 'Innovative Software Solutions') {
   // Check if we're on index.html or not
   const currentPage = window.location.pathname;
@@ -6,11 +9,18 @@ function getHeaderHTML(tagline = 'Innovative Software Solutions') {
   // If NOT on index page, add Home button at the beginning of nav
   const homeButton = !isIndexPage ? '<a href="index.html" data-translate="nav.home">Home</a>' : '';
   
+  // Header HTML generation
+  
   return `
   <header class="header">
     <div class="header__brand">
-      <h1 class="header__title"><a href="index.html" class="header__home">akkistech</a></h1>
-      <span class="header__tagline" data-translate="hero.tagline">${tagline}</span>
+      <div class="header__logo">
+        <img src="${logoUrl}" alt="AkkisTech Logo" class="header__logo-img">
+      </div>
+      <div class="header__brand-text">
+        <h1 class="header__title"><a href="index.html" class="header__home">AkkisTech</a></h1>
+        <span class="header__tagline" data-translate="hero.tagline">${tagline}</span>
+      </div>
     </div>
     <nav class="header__nav">
       ${homeButton}
@@ -32,7 +42,7 @@ function getFooterHTML() {
     <div class="footer__content">
       <div class="footer__section footer__section--brand">
         <h4>akkistech</h4>
-        <p><span data-translate="hero.tagline">Innovative Software Solutions</span><br>Bremen & Hamburg, Deutschland</p>
+        <p><span data-translate="hero.tagline">Innovative Software Solutions</span><br>Bremen, Deutschland</p>
         <p class="footer__tagline" data-translate="footer.tagline">Full-Stack Development • AI Solutions • Cloud Services</p>
         <div class="footer__social">
           <a href="https://linkedin.com/company/akkistech" target="_blank" rel="noopener" aria-label="LinkedIn">
@@ -81,8 +91,7 @@ function getFooterHTML() {
         <p>
           <strong data-translate="contact.email">E-Mail:</strong> kerimakkis@gmail.com<br>
           <strong data-translate="contact.phone">Telefon:</strong> +49 (0) 172 563 4515<br>
-          <strong>Bremen:</strong> Überseestadt<br>
-          <strong>Hamburg:</strong> HafenCity
+          <strong>Bremen:</strong> Findorff, 28215 Bremen
         </p>
       </div>
     </div>

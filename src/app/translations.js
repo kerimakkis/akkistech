@@ -79,7 +79,25 @@ export const translations = {
       email: 'Email',
       phone: 'Phone',
       location: 'Location',
-      cta: 'Send Email'
+      cta: 'Send Email',
+      formTitle: 'Contact Form',
+      formHeading: 'Send us a Message',
+      formName: 'Your Name *',
+      formEmail: 'Your Email *',
+      formPhone: 'Phone Number',
+      formMessage: 'Your Message *',
+      formServiceSelect: 'Select Service (Optional)',
+      formSubmit: 'Send Message',
+      formSending: 'Sending...',
+      quickContactTitle: 'Quick Contact',
+      quickContactHeading: 'Connect with Us',
+      whatsapp: 'WhatsApp',
+      call: 'Call Us',
+      locationTitle: 'Our Location',
+      locationHeading: 'Find Us in Bremen',
+      bremenOffice: 'Bremen Office',
+      bremenAddress: 'Findorff<br>28215 Bremen<br>Germany',
+      servicesHeading: 'What We Offer'
     },
     footer: {
       tagline: 'Full-Stack Development • AI Solutions • Cloud Services',
@@ -180,7 +198,25 @@ export const translations = {
       email: 'E-Mail',
       phone: 'Telefon',
       location: 'Standort',
-      cta: 'E-Mail senden'
+      cta: 'E-Mail senden',
+      formTitle: 'Kontaktformular',
+      formHeading: 'Senden Sie uns eine Nachricht',
+      formName: 'Ihr Name *',
+      formEmail: 'Ihre E-Mail *',
+      formPhone: 'Telefonnummer',
+      formMessage: 'Ihre Nachricht *',
+      formServiceSelect: 'Service auswählen (Optional)',
+      formSubmit: 'Nachricht senden',
+      formSending: 'Wird gesendet...',
+      quickContactTitle: 'Schnellkontakt',
+      quickContactHeading: 'Verbinden Sie sich mit uns',
+      whatsapp: 'WhatsApp',
+      call: 'Anrufen',
+      locationTitle: 'Unser Standort',
+      locationHeading: 'Finden Sie uns in Bremen',
+      bremenOffice: 'Bremen Büro',
+      bremenAddress: 'Findorff<br>28215 Bremen<br>Deutschland',
+      servicesHeading: 'Was wir anbieten'
     },
     footer: {
       tagline: 'Full-Stack Entwicklung • AI Lösungen • Cloud Services',
@@ -281,7 +317,25 @@ export const translations = {
       email: 'E-posta',
       phone: 'Telefon',
       location: 'Konum',
-      cta: 'E-posta Gönder'
+      cta: 'E-posta Gönder',
+      formTitle: 'İletişim Formu',
+      formHeading: 'Bize Mesaj Gönderin',
+      formName: 'Adınız *',
+      formEmail: 'E-posta Adresiniz *',
+      formPhone: 'Telefon Numarası',
+      formMessage: 'Mesajınız *',
+      formServiceSelect: 'Hizmet Seçin (İsteğe Bağlı)',
+      formSubmit: 'Mesaj Gönder',
+      formSending: 'Gönderiliyor...',
+      quickContactTitle: 'Hızlı İletişim',
+      quickContactHeading: 'Bizimle İletişime Geçin',
+      whatsapp: 'WhatsApp',
+      call: 'Ara',
+      locationTitle: 'Konumumuz',
+      locationHeading: 'Bremen\'de Bizi Bulun',
+      bremenOffice: 'Bremen Ofisi',
+      bremenAddress: 'Findorff<br>28215 Bremen<br>Almanya',
+      servicesHeading: 'Neler Sunuyoruz'
     },
     footer: {
       tagline: 'Full-Stack Geliştirme • AI Çözümleri • Bulut Hizmetleri',
@@ -379,9 +433,9 @@ export class LanguageManager {
     };
 
     const descTexts = {
-      en: 'Professional Software Development, AI Solutions, Web & Mobile Development, Cloud Services. Bremen, Hamburg, Germany.',
-      de: 'Professionelle Software-Entwicklung, AI-Lösungen, Web & Mobile Development, Cloud Services. Bremen, Hamburg, Deutschland.',
-      tr: 'Profesyonel Yazılım Geliştirme, AI Çözümleri, Web & Mobil Geliştirme, Bulut Hizmetleri. Bremen, Hamburg, Almanya.'
+      en: 'Professional Software Development, AI Solutions, Web & Mobile Development, Cloud Services. Bremen, Germany.',
+      de: 'Professionelle Software-Entwicklung, AI-Lösungen, Web & Mobile Development, Cloud Services. Bremen, Deutschland.',
+      tr: 'Profesyonel Yazılım Geliştirme, AI Çözümleri, Web & Mobil Geliştirme, Bulut Hizmetleri. Bremen, Almanya.'
     };
 
     if (title) title.textContent = titleTexts[this.currentLang];
@@ -396,6 +450,16 @@ export class LanguageManager {
       const text = this.getTranslation(key);
       if (text) {
         element.innerHTML = text;
+      }
+    });
+
+    // Translate placeholder attributes
+    const placeholderElements = document.querySelectorAll('[data-translate-placeholder]');
+    placeholderElements.forEach(element => {
+      const key = element.dataset.translatePlaceholder;
+      const translation = this.getTranslation(key);
+      if (translation) {
+        element.placeholder = translation;
       }
     });
 

@@ -494,20 +494,41 @@ canvas.webgl
     grid-template-rows: auto auto auto
     grid-template-areas: "brand nav" "... ..." "... language"
 
-  &__brand
-    align-self: center
-    display: flex
-    
-    @media screen and (min-width: 53em)
-      grid-area: brand
+.header__brand
+  display: flex
+  align-items: center
+  gap: 1rem
+  
+  @media screen and (max-width: 53em)
+    flex-direction: column
+    gap: 0.5rem
 
-  &__title
-    font-size: 1rem
-    margin: 0 0 1rem
-    font-weight: 500
-    
-    @media screen and (min-width: 53em)
-      margin: 0
+.header__logo
+  flex-shrink: 0
+
+.header__logo-img
+  width: 60px
+  height: 60px
+  object-fit: contain
+  display: block
+  z-index: 1001
+  
+  @media screen and (max-width: 53em)
+    width: 48px
+    height: 48px
+
+.header__brand-text
+  display: flex
+  flex-direction: column
+  gap: 0.25rem
+
+.header__title
+  font-size: 1.2rem
+  margin: 0
+  font-weight: 600
+  
+  @media screen and (min-width: 53em)
+    font-size: 1.4rem
 
 .header__home
   color: inherit
@@ -518,14 +539,11 @@ canvas.webgl
 
 .header__tagline
   position: relative
-  margin: 0 0 0 1rem
-  padding: 0 0 0 1rem
-  opacity: 0.5
-
-  @media screen and (max-width: 53em)
-    display: block
-    margin: 0
-    padding: 0
+  margin: 0
+  padding: 0
+  opacity: 0.7
+  font-size: 0.9rem
+  font-weight: 400
 
 .header__nav
   display: inline

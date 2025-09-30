@@ -37,42 +37,42 @@
 						<section class="section">
 							<div class="section__title">
 								<h1 class="section__title-number"></h1>
-								<h2 class="section__title-text">Contact Form</h2>
+								<h2 class="section__title-text" data-translate="contact.formTitle">Contact Form</h2>
 							</div>
 							<div class="section__paragraph">
-								<h3>Send us a Message</h3>
+								<h3 data-translate="contact.formHeading">Send us a Message</h3>
 								<form id="contact-form" class="contact-form">
 									<div class="form-group">
-										<input type="text" id="from_name" name="from_name" placeholder="Your Name *" required>
+										<input type="text" id="from_name" name="from_name" placeholder="Your Name *" data-translate-placeholder="contact.formName" required>
 									</div>
 									<div class="form-group">
-										<input type="email" id="from_email" name="from_email" placeholder="Your Email *" required>
+										<input type="email" id="from_email" name="from_email" placeholder="Your Email *" data-translate-placeholder="contact.formEmail" required>
 									</div>
 									<div class="form-group">
-										<input type="tel" id="phone" name="phone" placeholder="Phone Number">
+										<input type="tel" id="phone" name="phone" placeholder="Phone Number" data-translate-placeholder="contact.formPhone">
 									</div>
 									<div class="form-group">
 										<select id="service" name="service">
-											<option value="">Select Service (Optional)</option>
-											<option value="Web Development">Web Development</option>
-											<option value="Mobile Apps">Mobile Apps</option>
-											<option value="Backend & API">Backend & API</option>
-											<option value="UI/UX Design">UI/UX Design</option>
-											<option value="Cloud & DevOps">Cloud & DevOps</option>
-											<option value="Security">Security</option>
-											<option value="SEO & Marketing">SEO & Marketing</option>
-											<option value="AI & Data">AI & Data</option>
-											<option value="Support">Support</option>
-											<option value="Consulting">Consulting</option>
+											<option value="" data-translate="contact.formServiceSelect">Select Service (Optional)</option>
+											<option value="Web Development" data-translate="services.web.heading">Web Development</option>
+											<option value="Mobile Apps" data-translate="services.mobile.heading">Mobile Apps</option>
+											<option value="Backend & API" data-translate="services.backend.heading">Backend & API</option>
+											<option value="UI/UX Design" data-translate="services.design.heading">UI/UX Design</option>
+											<option value="Cloud & DevOps" data-translate="services.cloud.heading">Cloud & DevOps</option>
+											<option value="Security" data-translate="services.security.heading">Security</option>
+											<option value="SEO & Marketing" data-translate="services.seo.heading">SEO & Marketing</option>
+											<option value="AI & Data" data-translate="services.ai.heading">AI & Data</option>
+											<option value="Support" data-translate="services.support.heading">Support</option>
+											<option value="Consulting" data-translate="services.consulting.heading">Consulting</option>
 										</select>
 									</div>
 							<div class="form-group">
-								<textarea id="message" name="message" rows="5" placeholder="Your Message *" required></textarea>
+								<textarea id="message" name="message" rows="5" placeholder="Your Message *" data-translate-placeholder="contact.formMessage" required></textarea>
 							</div>
 							<!-- reCAPTCHA v3 works invisibly, no checkbox needed -->
 									<button type="submit" class="section__button" id="submit-btn">
-										<span id="btn-text">Send Message</span>
-										<span id="btn-loader" class="btn-loader" style="display:none;">Sending...</span>
+										<span id="btn-text" data-translate="contact.formSubmit">Send Message</span>
+										<span id="btn-loader" class="btn-loader" style="display:none;" data-translate="contact.formSending">Sending...</span>
 									</button>
 									<div id="form-message" class="form-message"></div>
 								</form>
@@ -82,10 +82,10 @@
 						<section class="section">
 							<div class="section__title">
 								<h1 class="section__title-number"></h1>
-								<h2 class="section__title-text">Quick Contact</h2>
+								<h2 class="section__title-text" data-translate="contact.quickContactTitle">Quick Contact</h2>
 							</div>
 							<div class="section__paragraph">
-								<h3>Connect with Us</h3>
+								<h3 data-translate="contact.quickContactHeading">Connect with Us</h3>
 								<div class="contact-buttons">
 									<a href="https://wa.me/491725634515?text=Hello%20akkistech!%20I%27m%20interested%20in%20your%20services." 
 									   target="_blank" 
@@ -94,25 +94,25 @@
 										<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
 											<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
 										</svg>
-										WhatsApp
+										<span data-translate="contact.whatsapp">WhatsApp</span>
 									</a>
 									<a href="tel:+491725634515" class="contact-btn phone-btn">
 										<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
 											<path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
 										</svg>
-										Call Us
+										<span data-translate="contact.call">Call Us</span>
 									</a>
 									<a href="mailto:kerimakkis@gmail.com" class="contact-btn email-btn" id="email-btn">
 										<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
 											<path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
 										</svg>
-										Email
+										<span data-translate="contact.email">Email</span>
 									</a>
 								</div>
 								<div class="contact-info">
 									<p><strong data-translate="contact.email">Email:</strong> kerimakkis@gmail.com</p>
 									<p><strong data-translate="contact.phone">Phone:</strong> +49 (0) 172 563 4515</p>
-									<p><strong data-translate="contact.location">Location:</strong> Bremen, Deutschland</p>
+									<p><strong data-translate="contact.location">Location:</strong> Bremen Findorff, Deutschland</p>
 								</div>
 							</div>
 						</section>
@@ -120,10 +120,10 @@
 						<section class="section">
 							<div class="section__title">
 								<h1 class="section__title-number"></h1>
-								<h2 class="section__title-text">Our Location</h2>
+								<h2 class="section__title-text" data-translate="contact.locationTitle">Our Location in Bremen Findorff</h2>
 							</div>
 							<div class="section__paragraph">
-								<h3>Find Us in Bremen</h3>
+								<h3 data-translate="contact.locationHeading">Find Us in Bremen Findorff</h3>
 								<div class="map-container">
 									<iframe 
 										src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2386.7845!2d8.5821!3d53.1095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTPCsDA2JzM0LjIiTiA4wrAzNCw1Ny41IkU!5e0!3m2!1sen!2sde!4v1234567890"
@@ -137,17 +137,11 @@
 								</div>
 								<div class="tech-grid" style="margin-top: 2rem;">
 									<div class="tech-item">
-										<strong>Bremen Office</strong><br>
-										Überseestadt<br>
-										28217 Bremen<br>
-										Deutschland
-									</div>
-									<div class="tech-item">
-										<strong>Hamburg Office</strong><br>
-										HafenCity<br>
-										20457 Hamburg<br>
-										Deutschland
-									</div>
+										<strong data-translate="contact.bremenOffice">Bremen Office</strong><br>
+										<span data-translate="contact.bremenAddress">Findorff<br>
+										28215 Bremen<br>
+										Deutschland</span>
+									</div>									
 								</div>
 							</div>
 						</section>
@@ -158,7 +152,7 @@
 								<h2 class="section__title-text" data-translate="nav.services">Services</h2>
 							</div>
 							<div class="section__paragraph">
-								<h3>What We Offer</h3>
+								<h3 data-translate="contact.servicesHeading">What We Offer</h3>
 								<ul class="service-list">
 									<li><a href="web-development.html" data-translate="services.web.heading">Web Development</a></li>
 									<li><a href="mobile-development.html" data-translate="services.mobile.heading">Mobile Apps</a></li>
