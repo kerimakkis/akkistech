@@ -1,13 +1,21 @@
 function getHeaderHTML(tagline = 'Innovative Software Solutions') {
+  // Check if we're on index.html or not
+  const currentPage = window.location.pathname;
+  const isIndexPage = currentPage === '/' || currentPage.endsWith('/index.html') || currentPage.endsWith('/');
+  
+  // If NOT on index page, add Home button at the beginning of nav
+  const homeButton = !isIndexPage ? '<a href="index.html" data-translate="nav.home">Home</a>' : '';
+  
   return `
   <header class="header">
     <div class="header__brand">
       <h1 class="header__title"><a href="index.html" class="header__home">akkistech</a></h1>
-      <span class="header__tagline">${tagline}</span>
+      <span class="header__tagline" data-translate="hero.tagline">${tagline}</span>
     </div>
     <nav class="header__nav">
+      ${homeButton}
       <a href="index.html#services" data-translate="nav.services">Services</a>
-      <a href="index.html#contact" data-translate="nav.contact">Contact</a>
+      <a href="contact.html" data-translate="nav.contact">Contact</a>
       <a href="index.html#about" data-translate="nav.about">About</a>
     </nav>
     <div class="header__language">
@@ -24,8 +32,8 @@ function getFooterHTML() {
     <div class="footer__content">
       <div class="footer__section footer__section--brand">
         <h4>akkistech</h4>
-        <p>Innovative Software Solutions<br>Bremen & Hamburg, Deutschland</p>
-        <p class="footer__tagline">Full-Stack Development • AI Solutions • Cloud Services</p>
+        <p><span data-translate="hero.tagline">Innovative Software Solutions</span><br>Bremen & Hamburg, Deutschland</p>
+        <p class="footer__tagline" data-translate="footer.tagline">Full-Stack Development • AI Solutions • Cloud Services</p>
         <div class="footer__social">
           <a href="https://linkedin.com/company/akkistech" target="_blank" rel="noopener" aria-label="LinkedIn">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
@@ -39,42 +47,42 @@ function getFooterHTML() {
         </div>
       </div>
       <div class="footer__section">
-        <h4>Services</h4>        
+        <h4 data-translate="nav.services">Services</h4>        
         <ul>
-          <li><a href="web-development.html">Web Development</a></li>
-          <li><a href="mobile-development.html">Mobile Apps</a></li>
-          <li><a href="backend-api.html">Backend</a></li>
-          <li><a href="ui-ux-design.html">UX/UIDesign</a></li>          
-          <li><a href="cloud-devops.html">Cloud Services</a></li>          
-          <li><a href="security.html">Security</a></li>
-          <li><a href="seo-marketing.html">SEO & Marketing</a></li>
-          <li><a href="ai-data.html">AI Solutions</a></li>
-          <li><a href="support.html">Support</a></li>
-          <li><a href="consulting.html">Consulting</a></li>
+          <li><a href="web-development.html" data-translate="services.web.heading">Web Development</a></li>
+          <li><a href="mobile-development.html" data-translate="services.mobile.heading">Mobile Apps</a></li>
+          <li><a href="backend-api.html" data-translate="services.backend.heading">Backend</a></li>
+          <li><a href="ui-ux-design.html" data-translate="services.design.heading">UX/UI Design</a></li>          
+          <li><a href="cloud-devops.html" data-translate="services.cloud.heading">Cloud Services</a></li>          
+          <li><a href="security.html" data-translate="services.security.heading">Security</a></li>
+          <li><a href="seo-marketing.html" data-translate="services.seo.heading">SEO & Marketing</a></li>
+          <li><a href="ai-data.html" data-translate="services.ai.heading">AI Solutions</a></li>
+          <li><a href="support.html" data-translate="services.support.heading">Support</a></li>
+          <li><a href="consulting.html" data-translate="services.consulting.heading">Consulting</a></li>
         </ul>
       </div>
       <div class="footer__section">
-        <h4>Unternehmen</h4>
+        <h4 data-translate="footer.company">Unternehmen</h4>
         <ul>
-          <li><a href="index.html#about">Über uns</a></li>
-          <li><a href="index.html#contact">Kontakt</a></li>
-          <li><a href="/impressum">Impressum</a></li>
-          <li><a href="/datenschutz">Datenschutz</a></li>
+          <li><a href="index.html#about" data-translate="footer.about">Über uns</a></li>
+          <li><a href="contact.html" data-translate="footer.contact">Kontakt</a></li>
+          <li><a href="/impressum" data-translate="footer.imprint">Impressum</a></li>
+          <li><a href="/datenschutz" data-translate="footer.privacy">Datenschutz</a></li>
         </ul>
       </div>
       <div class="footer__section">
-        <h4>Kontakt</h4>
+        <h4 data-translate="nav.contact">Kontakt</h4>
         <p>
-          <strong>E-Mail:</strong> hello@akkistech.com<br>
-          <strong>Telefon:</strong> +49 (0) 421 123 456<br>
+          <strong data-translate="contact.email">E-Mail:</strong> hello@akkistech.com<br>
+          <strong data-translate="contact.phone">Telefon:</strong> +49 (0) 421 123 456<br>
           <strong>Bremen:</strong> Überseestadt<br>
           <strong>Hamburg:</strong> HafenCity
         </p>
       </div>
     </div>
     <div class="footer__bottom">
-      <p>© 2024 akkistech. Alle Rechte vorbehalten.</p>
-      <p class="footer__credits">inspired by <a href="https://tympanus.net/codrops" target="_blank">Codrops</a></p>
+      <p data-translate="footer.copyright">© 2024 akkistech. Alle Rechte vorbehalten.</p>
+      <p class="footer__credits"><span data-translate="footer.credits">inspired by</span> <a href="https://tympanus.net/codrops" target="_blank">Codrops</a></p>
     </div>
   </footer>`;
 }

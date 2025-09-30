@@ -2,6 +2,7 @@
 export const translations = {
   en: {
     nav: {
+      home: 'Home',
       services: 'Services',
       contact: 'Contact',
       about: 'About'
@@ -14,61 +15,61 @@ export const translations = {
         title: 'Web',
         heading: 'Web Development',
         description: 'Corporate websites, E-Commerce solutions, Landing pages, CMS integration, Web performance optimization',
-        cta: 'Start Project'
+        cta: 'Learn More'
       },
       mobile: {
         title: 'Mobile',
         heading: 'Mobile Development', 
         description: 'iOS & Android Apps, React Native, Flutter, PWA, App Store Publishing, IoT Integration',
-        cta: 'Develop App'
+        cta: 'Learn More'
       },
       backend: {
         title: 'Backend',
         heading: 'Backend & API Services',
         description: 'Custom Backend, REST & GraphQL APIs, Database Design, ERP/CRM Integration, Microservices',
-        cta: 'Build API'
+        cta: 'Learn More'
       },
       design: {
         title: 'Design',
         heading: 'UI/UX & Design',
         description: 'User Interface Design, Prototyping, UX Research, Corporate Identity, Animation & Micro-interactions',
-        cta: 'Request Design'
+        cta: 'Learn More'
       },
       cloud: {
         title: 'Cloud',
         heading: 'Cloud & DevOps',
         description: 'AWS, Azure, GCP, Docker, Kubernetes, CI/CD Pipelines, High Availability, Disaster Recovery',
-        cta: 'Cloud Setup'
+        cta: 'Learn More'
       },
       security: {
         title: 'Security',
         heading: 'Security & Compliance',
         description: 'PenTest, Vulnerability Scans, SSL/TLS, WAF, DDoS Protection, GDPR Compliance, Data Encryption',
-        cta: 'Security Audit'
+        cta: 'Learn More'
       },
       seo: {
         title: 'SEO',
         heading: 'SEO & Digital Marketing',
         description: 'Technical SEO, Content Strategy, Google Analytics, Online Advertising, Social Media Integration',
-        cta: 'SEO Analysis'
+        cta: 'Learn More'
       },
       ai: {
         title: 'AI',
         heading: 'AI & Data Services',
         description: 'AI Chatbots, Recommendation Systems, NLP, Computer Vision, Data Science, Predictive Analytics, RPA',
-        cta: 'AI Solution'
+        cta: 'Learn More'
       },
       support: {
         title: 'Support',
         heading: 'Maintenance & Support',
         description: 'Hosting Management, Software Updates, 24/7 SLA Support, Bug Fixes, User Training',
-        cta: 'Request Support'
+        cta: 'Learn More'
       },
       consulting: {
         title: 'Consulting',
         heading: 'Consulting & Strategy',
         description: 'Digital Transformation, Technology Consulting, Product Strategy, Agile Coaching, AI-Ready Planning',
-        cta: 'Book Consultation'
+        cta: 'Learn More'
       }
     },
     contact: {
@@ -89,11 +90,20 @@ export const translations = {
       privacy: 'Privacy',
       copyright: '© 2024 akkistech. All rights reserved.',
       credits: 'Shader effects inspired by'
+    },
+    common: {
+      getStarted: 'Get Started',
+      services: 'Services',
+      technologies: 'Technologies',
+      techStack: 'Tech Stack',
+      process: 'Process',
+      tools: 'Tools'
     }
   },
   
   de: {
     nav: {
+      home: 'Startseite',
       services: 'Services',
       contact: 'Kontakt',
       about: 'Über uns'
@@ -106,61 +116,61 @@ export const translations = {
         title: 'Web',
         heading: 'Web-Entwicklung',
         description: 'Unternehmenswebsites, E-Commerce-Lösungen, Landing Pages, CMS-Integration, Web-Performance-Optimierung',
-        cta: 'Projekt starten'
+        cta: 'Mehr erfahren'
       },
       mobile: {
         title: 'Mobile',
         heading: 'Mobile Entwicklung',
         description: 'iOS & Android Apps, React Native, Flutter, PWA, App Store Veröffentlichung, IoT Integration',
-        cta: 'App entwickeln'
+        cta: 'Mehr erfahren'
       },
       backend: {
         title: 'Backend',
         heading: 'Backend & API Services',
         description: 'Custom Backend, REST & GraphQL APIs, Datenbankdesign, ERP/CRM Integration, Microservices',
-        cta: 'API entwickeln'
+        cta: 'Mehr erfahren'
       },
       design: {
         title: 'Design',
         heading: 'UI/UX & Design',
         description: 'User Interface Design, Prototyping, UX-Forschung, Corporate Identity, Animation & Micro-Interactions',
-        cta: 'Design anfragen'
+        cta: 'Mehr erfahren'
       },
       cloud: {
         title: 'Cloud',
         heading: 'Cloud & DevOps',
         description: 'AWS, Azure, GCP, Docker, Kubernetes, CI/CD Pipelines, Hochverfügbarkeit, Disaster Recovery',
-        cta: 'Cloud Setup'
+        cta: 'Mehr erfahren'
       },
       security: {
         title: 'Security',
         heading: 'Sicherheit & Compliance',
         description: 'PenTest, Vulnerability Scans, SSL/TLS, WAF, DDoS-Schutz, DSGVO-Compliance, Datenverschlüsselung',
-        cta: 'Security Audit'
+        cta: 'Mehr erfahren'
       },
       seo: {
         title: 'SEO',
         heading: 'SEO & Digital Marketing',
         description: 'Technical SEO, Content-Strategie, Google Analytics, Online-Werbung, Social Media Integration',
-        cta: 'SEO Analyse'
+        cta: 'Mehr erfahren'
       },
       ai: {
         title: 'AI',
         heading: 'AI & Data Services',
         description: 'AI Chatbots, Empfehlungssysteme, NLP, Computer Vision, Data Science, Predictive Analytics, RPA',
-        cta: 'AI Lösung'
+        cta: 'Mehr erfahren'
       },
       support: {
         title: 'Support',
         heading: 'Wartung & Support',
         description: 'Hosting-Management, Software-Updates, 24/7 SLA Support, Bug-Fixes, Benutzerschulung',
-        cta: 'Support anfragen'
+        cta: 'Mehr erfahren'
       },
       consulting: {
         title: 'Beratung',
         heading: 'Beratung & Strategie',
         description: 'Digitale Transformation, Technologie-Beratung, Produktstrategie, Agile Coaching, AI-Ready Planung',
-        cta: 'Beratung buchen'
+        cta: 'Mehr erfahren'
       }
     },
     contact: {
@@ -181,11 +191,20 @@ export const translations = {
       privacy: 'Datenschutz',
       copyright: '© 2024 akkistech. Alle Rechte vorbehalten.',
       credits: 'Shader-Effekte inspiriert von'
+    },
+    common: {
+      getStarted: 'Los geht\'s',
+      services: 'Services',
+      technologies: 'Technologien',
+      techStack: 'Tech Stack',
+      process: 'Prozess',
+      tools: 'Tools'
     }
   },
 
   tr: {
     nav: {
+      home: 'Ana Sayfa',
       services: 'Hizmetler',
       contact: 'İletişim',
       about: 'Hakkımızda'
@@ -198,61 +217,61 @@ export const translations = {
         title: 'Web',
         heading: 'Web Geliştirme',
         description: 'Kurumsal web siteleri, E-Ticaret çözümleri, Landing sayfalar, CMS entegrasyonu, Web performans optimizasyonu',
-        cta: 'Projeyi Başlat'
+        cta: 'Daha Fazla'
       },
       mobile: {
         title: 'Mobil',
         heading: 'Mobil Geliştirme',
         description: 'iOS & Android Uygulamaları, React Native, Flutter, PWA, App Store Yayınlama, IoT Entegrasyonu',
-        cta: 'Uygulama Geliştir'
+        cta: 'Daha Fazla'
       },
       backend: {
         title: 'Backend',
         heading: 'Backend & API Hizmetleri',
         description: 'Özel Backend, REST & GraphQL API\'lar, Veritabanı Tasarımı, ERP/CRM Entegrasyonu, Microservices',
-        cta: 'API Geliştir'
+        cta: 'Daha Fazla'
       },
       design: {
         title: 'Tasarım',
         heading: 'UI/UX & Tasarım',
         description: 'Kullanıcı Arayüzü Tasarımı, Prototipleme, UX Araştırması, Kurumsal Kimlik, Animasyon & Micro-etkileşimler',
-        cta: 'Tasarım Talep Et'
+        cta: 'Daha Fazla'
       },
       cloud: {
         title: 'Bulut',
         heading: 'Bulut & DevOps',
         description: 'AWS, Azure, GCP, Docker, Kubernetes, CI/CD Pipeline\'ları, Yüksek Erişilebilirlik, Felaket Kurtarma',
-        cta: 'Bulut Kurulum'
+        cta: 'Daha Fazla'
       },
       security: {
         title: 'Güvenlik',
         heading: 'Güvenlik & Uyumluluk',
         description: 'PenTest, Güvenlik Açığı Taramaları, SSL/TLS, WAF, DDoS Koruması, GDPR Uyumluluğu, Veri Şifreleme',
-        cta: 'Güvenlik Denetimi'
+        cta: 'Daha Fazla'
       },
       seo: {
         title: 'SEO',
         heading: 'SEO & Dijital Pazarlama',
         description: 'Teknik SEO, İçerik Stratejisi, Google Analytics, Online Reklamcılık, Sosyal Medya Entegrasyonu',
-        cta: 'SEO Analizi'
+        cta: 'Daha Fazla'
       },
       ai: {
         title: 'AI',
         heading: 'AI & Veri Hizmetleri',
         description: 'AI Chatbot\'lar, Öneri Sistemleri, NLP, Bilgisayarlı Görü, Veri Bilimi, Tahmine Dayalı Analitik, RPA',
-        cta: 'AI Çözümü'
+        cta: 'Daha Fazla'
       },
       support: {
         title: 'Destek',
         heading: 'Bakım & Destek',
         description: 'Hosting Yönetimi, Yazılım Güncellemeleri, 7/24 SLA Desteği, Hata Düzeltmeleri, Kullanıcı Eğitimi',
-        cta: 'Destek Talep Et'
+        cta: 'Daha Fazla'
       },
       consulting: {
         title: 'Danışmanlık',
         heading: 'Danışmanlık & Strateji',
         description: 'Dijital Dönüşüm, Teknoloji Danışmanlığı, Ürün Stratejisi, Agile Koçluk, AI-Hazır Planlama',
-        cta: 'Danışmanlık Rezerve Et'
+        cta: 'Daha Fazla'
       }
     },
     contact: {
@@ -273,6 +292,14 @@ export const translations = {
       privacy: 'Gizlilik',
       copyright: '© 2024 akkistech. Tüm hakları saklıdır.',
       credits: 'Shader efektleri şundan ilham alınmıştır'
+    },
+    common: {
+      getStarted: 'Başlayalım',
+      services: 'Hizmetler',
+      technologies: 'Teknolojiler',
+      techStack: 'Teknoloji Yığını',
+      process: 'Süreç',
+      tools: 'Araçlar'
     }
   }
 };
@@ -372,10 +399,10 @@ export class LanguageManager {
       }
     });
 
-    // Update tagline
-    const tagline = document.querySelector('.frame__tagline');
-    if (tagline) {
-      tagline.textContent = translations[this.currentLang].hero.tagline;
+    // Update tagline (new header markup)
+    const headerTagline = document.querySelector('.header__tagline');
+    if (headerTagline) {
+      headerTagline.textContent = translations[this.currentLang].hero.tagline;
     }
   }
 
