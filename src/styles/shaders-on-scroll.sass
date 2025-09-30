@@ -133,6 +133,15 @@ canvas.webgl
     &-text
       font-size: min(18vw, 12rem)
       padding-left: .1ch
+      word-wrap: break-word
+      overflow-wrap: break-word
+      hyphens: auto
+      
+      @media (max-width: 64em)
+        font-size: min(15vw, 8rem)
+      
+      @media (max-width: 48em)
+        font-size: min(12vw, 6rem)
         
     &-arrow
       font-size: min(9vw, 6rem)
@@ -569,7 +578,7 @@ canvas.webgl
     grid-area: language
     justify-self: end
     align-self: end
-      margin-top: 0.75rem
+    margin-top: 0.75rem
     padding-left: 1rem
 
 .lang-btn
