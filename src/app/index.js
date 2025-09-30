@@ -193,7 +193,14 @@ class ScrollStage {
   onLoad() {
     document.body.classList.remove('loading')
 
-    this.animations = new Animations(this.element, this.camera)
+    // Only initialize animations if animation elements exist
+    const hasAnimationElements = this.element.querySelector('.section__title-number') || 
+                                   this.element.querySelector('.section__title-text');
+    
+    if (hasAnimationElements) {
+      this.animations = new Animations(this.element, this.camera)
+    }
+    
     if (document.querySelector('.lang-btn')) {
       this.languageManager = new LanguageManager()
     } else {
@@ -268,7 +275,8 @@ class ScrollStage {
    */
   render() {
     this.renderer.render(this.scene, this.camera)
-  }  
+  }
+  
 }
 
 new ScrollStage()

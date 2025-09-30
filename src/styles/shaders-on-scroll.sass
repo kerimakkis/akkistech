@@ -813,3 +813,79 @@ canvas.webgl
 
   .contact-form
     padding: 0 1rem
+
+// Legal Pages (Impressum & Datenschutz)
+.legal-page
+  max-width: 900px
+  margin: 8rem auto 4rem
+  padding: 2rem
+  color: $color-white
+  line-height: 1.8
+  
+  h1
+    @extend %font-title
+    font-size: 3rem
+    color: $color-white
+    margin-bottom: 2rem
+    text-align: center
+    
+    @media (max-width: 64em)
+      font-size: 2rem
+  
+  h2
+    @extend %font-title
+    font-size: 2rem
+    color: $color-1
+    margin-top: 3rem
+    margin-bottom: 1rem
+    
+    @media (max-width: 64em)
+      font-size: 1.5rem
+  
+  h3
+    @extend %font-title
+    font-size: 1.5rem
+    color: $color-white
+    margin-top: 2rem
+    margin-bottom: 0.75rem
+    
+    @media (max-width: 64em)
+      font-size: 1.25rem
+  
+  p
+    @extend %font-regular
+    margin-bottom: 1rem
+    opacity: 0.9
+  
+  ul
+    margin-left: 2rem
+    margin-bottom: 1rem
+    
+    li
+      margin-bottom: 0.5rem
+  
+  a
+    color: $color-1
+    text-decoration: underline
+    transition: color 0.3s ease
+    
+    &:hover
+      color: lighten($color-1, 10%)
+  
+  strong
+    font-weight: 600
+    color: $color-white
+  
+  small
+    opacity: 0.7
+  
+  .legal-actions
+    display: flex
+    gap: 1rem
+    justify-content: center
+    margin-top: 4rem
+    flex-wrap: wrap
+    
+    @media (max-width: 64em)
+      flex-direction: column
+      align-items: center

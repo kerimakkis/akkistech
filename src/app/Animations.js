@@ -29,19 +29,24 @@ export default class {
         z: 4,
         duration: 3
       })
-      
-      .from([ 
-        this.elements.number, 
-        this.elements.title, 
-        this.elements.text,  
-        this.elements.paragraph, 
-        this.elements.button,
-        this.elements.arrows
-      ], {
-          y: -100,
-          autoAlpha: 0,
-          stagger: .2,
-          duration: 1.6
+    
+    // Only animate elements that exist
+    const elementsToAnimate = [ 
+      this.elements.number, 
+      this.elements.title, 
+      this.elements.text,  
+      this.elements.paragraph, 
+      this.elements.button,
+      this.elements.arrows
+    ].filter(el => el && (el.length ? el.length > 0 : true)); // Filter out null/undefined
+    
+    if (elementsToAnimate.length > 0) {
+      animateIn.from(elementsToAnimate, {
+        y: -100,
+        autoAlpha: 0,
+        stagger: .2,
+        duration: 1.6
       }, '<.3')
     }
+  }
 }

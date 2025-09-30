@@ -23,7 +23,7 @@ function getHeaderHTML(tagline = 'Innovative Software Solutions') {
       ${homeButton}
       <a href="index.html#services" data-translate="nav.services">Services</a>
       <a href="contact.html" data-translate="nav.contact">Contact</a>
-      <a href="index.html#about" data-translate="nav.about">About</a>
+      <a href="about.html" data-translate="nav.about">About</a>
     </nav>
     <div class="header__language">
       <button class="lang-btn" data-lang="en">EN</button>
@@ -34,6 +34,10 @@ function getHeaderHTML(tagline = 'Innovative Software Solutions') {
 }
 
 function getFooterHTML() {
+  // Get current language from localStorage or default to 'en'
+  const currentLang = localStorage.getItem('akkistech-language') || 'en';
+  const langSuffix = currentLang === 'de' ? '-de' : currentLang === 'tr' ? '-tr' : '-en';
+  
   return `
   <footer class="footer">
     <div class="footer__content">
@@ -79,8 +83,8 @@ function getFooterHTML() {
         <ul>
           <li><a href="index.html#about" data-translate="footer.about">Über uns</a></li>
           <li><a href="contact.html" data-translate="footer.contact">Kontakt</a></li>
-          <li><a href="/impressum" data-translate="footer.imprint">Impressum</a></li>
-          <li><a href="/datenschutz" data-translate="footer.privacy">Datenschutz</a></li>
+          <li><a href="impressum${langSuffix}.html" data-translate="footer.imprint">Impressum</a></li>
+          <li><a href="datenschutz${langSuffix}.html" data-translate="footer.privacy">Datenschutz</a></li>
         </ul>
       </div>
       <div class="footer__section">
@@ -125,6 +129,14 @@ if (document.readyState === 'loading') {
   // In case the script is loaded after DOMContentLoaded
   injectLayout();
 }
+
+// Listen for language change events to reload footer
+window.addEventListener('languageChanged', () => {
+  const footerMount = document.getElementById('site-footer');
+  if (footerMount) {
+    footerMount.innerHTML = getFooterHTML();
+  }
+});
 
 export {};
 
