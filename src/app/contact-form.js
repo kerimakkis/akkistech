@@ -1,7 +1,7 @@
-// Contact Form Handler with EmailJS and reCAPTCHA
+// Contact Form Handler with EmailJS and reCAPTCHA v3
 (function() {
   // Initialize EmailJS with your public key
-  emailjs.init('YOUR_EMAILJS_PUBLIC_KEY'); // Replace with your actual public key
+  emailjs.init('6fx7eDxVPymjwtNf8'); // Replace with your actual public key
 
   const form = document.getElementById('contact-form');
   const submitBtn = document.getElementById('submit-btn');
@@ -14,44 +14,51 @@
   form.addEventListener('submit', async function(e) {
     e.preventDefault();
 
-    // Validate reCAPTCHA
-    const recaptchaResponse = grecaptcha.getResponse();
-    if (!recaptchaResponse) {
-      showMessage('Please complete the reCAPTCHA verification.', 'error');
-      return;
-    }
-
     // Disable submit button and show loader
     submitBtn.disabled = true;
     btnText.style.display = 'none';
     btnLoader.style.display = 'inline';
 
-    // Get form data
-    const formData = {
-      from_name: document.getElementById('from_name').value,
-      from_email: document.getElementById('from_email').value,
-      phone: document.getElementById('phone').value || 'Not provided',
-      service: document.getElementById('service').value || 'Not specified',
-      message: document.getElementById('message').value,
-      'g-recaptcha-response': recaptchaResponse
-    };
-
     try {
+      // Execute reCAPTCHA v3
+      const recaptchaToken = await grecaptcha.execute('6Lf2vdkrAAAAANe6CUUCwmFvT06BWILunkszczKq', { action: 'submit' });
+      
+      // Get form data - mapped to EmailJS template variables
+      const formData = {
+        name: document.getElementById('from_name').value,         // {{name}}
+        email: document.getElementById('from_email').value,       // {{email}}
+        contact: document.getElementById('from_email').value,     // {{contact}} (your template uses this)
+        phone: document.getElementById('phone').value || 'Not provided',  // {{phone}}
+        service: document.getElementById('service').value || 'Not specified',
+        title: document.getElementById('service').value || 'General Inquiry',
+        message: document.getElementById('message').value,        // {{message}}
+        time: new Date().toLocaleString('de-DE', { 
+          dateStyle: 'short', 
+          timeStyle: 'short' 
+        }),  // {{time}}
+        'g-recaptcha-response': recaptchaToken
+      };
+
       // Send email using EmailJS
       const response = await emailjs.send(
-        'YOUR_SERVICE_ID',     // Replace with your EmailJS service ID
-        'YOUR_TEMPLATE_ID',    // Replace with your EmailJS template ID
+        'service_0yjkhlj',     // Your EmailJS service ID
+        'template_o2jw3l9',    // Your EmailJS template ID (Contact Us template)
         formData
       );
 
       console.log('SUCCESS!', response.status, response.text);
       showMessage('Thank you! Your message has been sent successfully. We\'ll get back to you soon.', 'success');
       form.reset();
-      grecaptcha.reset();
       
     } catch (error) {
       console.error('FAILED...', error);
-      showMessage('Oops! Something went wrong. Please try again or contact us directly via email.', 'error');
+      
+      // Check if it's a reCAPTCHA error
+      if (error.message && error.message.includes('recaptcha')) {
+        showMessage('Security verification failed. Please refresh the page and try again.', 'error');
+      } else {
+        showMessage('Oops! Something went wrong. Please try again or contact us directly via email.', 'error');
+      }
     } finally {
       // Re-enable submit button
       submitBtn.disabled = false;

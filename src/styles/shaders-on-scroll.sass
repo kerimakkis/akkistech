@@ -771,11 +771,13 @@ canvas.webgl
   iframe
     display: block
 
-// reCAPTCHA styling
-.g-recaptcha
-  display: flex
-  justify-content: center
-  margin: 1rem 0
+// reCAPTCHA v3 badge styling (optional - it's already minimal by default)
+.grecaptcha-badge
+  opacity: 0.8
+  transition: opacity 0.3s ease
+  
+  &:hover
+    opacity: 1
 
 // Mobile responsiveness
 @media screen and (max-width: 768px)
