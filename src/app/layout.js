@@ -1,6 +1,3 @@
-// Use src folder path
-const logoUrl = './akkisTechLogo.png';
-
 function getHeaderHTML(tagline = 'Innovative Software Solutions') {
   // Check if we're on index.html or not
   const currentPage = window.location.pathname;
@@ -8,6 +5,9 @@ function getHeaderHTML(tagline = 'Innovative Software Solutions') {
   
   // If NOT on index page, add Home button at the beginning of nav
   const homeButton = !isIndexPage ? '<a href="index.html" data-translate="nav.home">Home</a>' : '';
+  
+  // Use inline SVG data URL (bypasses file loading issues)
+  const logoUrl = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MDAgNTAwIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCI+CiAgPHJlY3Qgd2lkdGg9IjUwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9IiM0MTY5RTEiLz4KICA8Y2lyY2xlIGN4PSIyNTAiIGN5PSIyMDAiIHI9IjgwIiBmaWxsPSIjRkZGRkZGIiBvcGFjaXR5PSIwLjIiLz4KICA8dGV4dCB4PSIyNTAiIHk9IjI4MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjQ4IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGRkZGRiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+CiAgICBBa2tpc1RlY2gKICA8L3RleHQ+CiAgPHRleHQgeD0iMjUwIiB5PSIzMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyMCIgZmlsbD0iI0ZGRkZGRiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgb3BhY2l0eT0iMC44Ij4KICAgIElubm92YXRpb24KICA8L3RleHQ+Cjwvc3ZnPg==';
   
   // Header HTML generation
   
