@@ -106,6 +106,10 @@ export const translations = {
       contact: 'Contact',
       imprint: 'Imprint',
       privacy: 'Privacy',
+      optiviera: 'Optiviera ERP',
+      optiviera: {
+        description: 'ERP Solution for Small Businesses'
+      },
       copyright: '© 2024 akkistech. All rights reserved.',
       credits: 'Shader effects inspired by'
     },
@@ -121,6 +125,82 @@ export const translations = {
       backToHome: 'Back to Homepage',
       imprint: 'Imprint',
       privacy: 'Privacy Policy'
+    },
+    optiviera: {
+      subtitle: 'Eco Level ERP for Small Businesses',
+      description: 'Business management empowered by modern technology. One-click installation, automatic license activation, 1 year free trial.',
+      downloadNow: 'Download Now',
+      seeFeatures: 'See Features',
+      featuresTitle: 'Features',
+      whyTitle: 'Why Optiviera ERP?',
+      whyDescription: 'Business management empowered by modern technology',
+      feature1: {
+        title: 'Quick Installation',
+        description: 'One-click installation, automatic database creation and 1 year free trial.'
+      },
+      feature2: {
+        title: '8 Language Support',
+        description: 'Turkish, English, German, French, Spanish, Italian, Portuguese, Dutch.'
+      },
+      feature3: {
+        title: 'Secure License',
+        description: 'Machine-based license system, automatic activation and secure payment.'
+      },
+      feature4: {
+        title: 'Ticket Management',
+        description: 'Track customer support requests, prioritize and resolve them.'
+      },
+      feature5: {
+        title: 'User Management',
+        description: 'Role-based access control, user authorization and security.'
+      },
+      feature6: {
+        title: 'Reporting',
+        description: 'Detailed reports, statistics and business performance analysis.'
+      },
+      downloadTitle: 'Download Optiviera ERP',
+      downloadDescription: 'Choose the most suitable platform for your business',
+      platform1: {
+        name: 'Windows',
+        description: 'Windows 10/11 (x64)'
+      },
+      platform2: {
+        name: 'macOS',
+        description: 'macOS 10.12+ (Intel & Apple Silicon)'
+      },
+      platform3: {
+        name: 'Linux',
+        description: 'Ubuntu, Debian, CentOS'
+      },
+      download: 'Download',
+      licenseTitle: 'License Information',
+      licenseDescription: 'Optiviera ERP license options',
+      license1: {
+        title: '<i class="fas fa-gift"></i> 1 Year Free Trial',
+        description: 'Full-featured 1 year free trial period. Access to all features, unlimited users, full support.'
+      },
+      license2: {
+        title: '<i class="fas fa-key"></i> Automatic Activation',
+        description: 'Automatic license activation after installation. Machine-based security, one-time setup.'
+      },
+      license3: {
+        title: '<i class="fas fa-credit-card"></i> Easy Purchase',
+        description: 'Secure payment system, instant activation, 24/7 technical support and update guarantee.'
+      },
+      contactTitle: 'Contact',
+      contactDescription: 'Contact us for your questions',
+      contact1: {
+        title: '<i class="fas fa-envelope"></i> Email',
+        description: 'Technical support and general questions'
+      },
+      contact2: {
+        title: '<i class="fas fa-globe"></i> Website',
+        description: 'More information and services'
+      },
+      contact3: {
+        title: '<i class="fas fa-briefcase"></i> Corporate',
+        description: 'Corporate solutions and special projects'
+      }
     },
     about: {
       hero: {
@@ -273,6 +353,10 @@ export const translations = {
       contact: 'Kontakt',
       imprint: 'Impressum',
       privacy: 'Datenschutz',
+      optiviera: 'Optiviera ERP',
+      optiviera: {
+        description: 'ERP-Lösung für kleine Unternehmen'
+      },
       copyright: '© 2024 akkistech. Alle Rechte vorbehalten.',
       credits: 'Shader-Effekte inspiriert von'
     },
@@ -288,6 +372,82 @@ export const translations = {
       backToHome: 'Zurück zur Startseite',
       imprint: 'Impressum',
       privacy: 'Datenschutzerklärung'
+    },
+    optiviera: {
+      subtitle: 'Eco Level ERP für kleine Unternehmen',
+      description: 'Geschäftsmanagement mit modernster Technologie. Ein-Klick-Installation, automatische Lizenzaktivierung, 1 Jahr kostenlose Testversion.',
+      downloadNow: 'Jetzt herunterladen',
+      seeFeatures: 'Funktionen ansehen',
+      featuresTitle: 'Funktionen',
+      whyTitle: 'Warum Optiviera ERP?',
+      whyDescription: 'Geschäftsmanagement mit modernster Technologie',
+      feature1: {
+        title: 'Schnelle Installation',
+        description: 'Ein-Klick-Installation, automatische Datenbankerstellung und 1 Jahr kostenlose Testversion.'
+      },
+      feature2: {
+        title: '8 Sprachen-Unterstützung',
+        description: 'Türkisch, Englisch, Deutsch, Französisch, Spanisch, Italienisch, Portugiesisch, Niederländisch.'
+      },
+      feature3: {
+        title: 'Sichere Lizenz',
+        description: 'Maschinenbasierte Lizenzierung, automatische Aktivierung und sichere Zahlung.'
+      },
+      feature4: {
+        title: 'Ticket-Management',
+        description: 'Kundensupport-Anfragen verfolgen, priorisieren und lösen.'
+      },
+      feature5: {
+        title: 'Benutzerverwaltung',
+        description: 'Rollenbasierte Zugriffskontrolle, Benutzerberechtigung und Sicherheit.'
+      },
+      feature6: {
+        title: 'Berichterstattung',
+        description: 'Detaillierte Berichte, Statistiken und Geschäftsleistungsanalyse.'
+      },
+      downloadTitle: 'Optiviera ERP herunterladen',
+      downloadDescription: 'Wählen Sie die beste Plattform für Ihr Unternehmen',
+      platform1: {
+        name: 'Windows',
+        description: 'Windows 10/11 (x64)'
+      },
+      platform2: {
+        name: 'macOS',
+        description: 'macOS 10.12+ (Intel & Apple Silicon)'
+      },
+      platform3: {
+        name: 'Linux',
+        description: 'Ubuntu, Debian, CentOS'
+      },
+      download: 'Herunterladen',
+      licenseTitle: 'Lizenzinformationen',
+      licenseDescription: 'Optiviera ERP Lizenzoptionen',
+      license1: {
+        title: '<i class="fas fa-gift"></i> 1 Jahr kostenlose Testversion',
+        description: 'Vollständige 1-jährige kostenlose Testversion. Zugang zu allen Funktionen, unbegrenzte Benutzer, vollständiger Support.'
+      },
+      license2: {
+        title: '<i class="fas fa-key"></i> Automatische Aktivierung',
+        description: 'Automatische Lizenzaktivierung nach der Installation. Maschinenbasierte Sicherheit, einmalige Einrichtung.'
+      },
+      license3: {
+        title: '<i class="fas fa-credit-card"></i> Einfacher Kauf',
+        description: 'Sicheres Zahlungssystem, sofortige Aktivierung, 24/7 technischer Support und Update-Garantie.'
+      },
+      contactTitle: 'Kontakt',
+      contactDescription: 'Kontaktieren Sie uns für Ihre Fragen',
+      contact1: {
+        title: '<i class="fas fa-envelope"></i> E-Mail',
+        description: 'Technischer Support und allgemeine Fragen'
+      },
+      contact2: {
+        title: '<i class="fas fa-globe"></i> Website',
+        description: 'Weitere Informationen und Dienstleistungen'
+      },
+      contact3: {
+        title: '<i class="fas fa-briefcase"></i> Unternehmensberatung',
+        description: 'Unternehmenslösungen und spezielle Projekte'
+      }
     },
     about: {
       hero: {
@@ -440,6 +600,10 @@ export const translations = {
       contact: 'İletişim',
       imprint: 'Künye',
       privacy: 'Gizlilik',
+      optiviera: 'Optiviera ERP',
+      optiviera: {
+        description: 'Küçük İşletmeler İçin ERP Çözümü'
+      },
       copyright: '© 2024 akkistech. Tüm hakları saklıdır.',
       credits: 'Shader efektleri şundan ilham alınmıştır'
     },
@@ -455,6 +619,82 @@ export const translations = {
       backToHome: 'Ana Sayfaya Dön',
       imprint: 'Künye',
       privacy: 'Gizlilik Politikası'
+    },
+    optiviera: {
+      subtitle: 'Küçük İşletmeler İçin Eko Seviye ERP',
+      description: 'Modern teknoloji ile güçlendirilmiş işletme yönetimi. Tek tıkla kurulum, otomatik lisans aktivasyonu, 1 yıllık ücretsiz deneme.',
+      downloadNow: 'Hemen İndir',
+      seeFeatures: 'Özellikleri Gör',
+      featuresTitle: 'Özellikler',
+      whyTitle: 'Neden Optiviera ERP?',
+      whyDescription: 'Modern teknoloji ile güçlendirilmiş işletme yönetimi',
+      feature1: {
+        title: 'Hızlı Kurulum',
+        description: 'Tek tıkla kurulum, otomatik veritabanı oluşturma ve 1 yıllık ücretsiz deneme.'
+      },
+      feature2: {
+        title: '8 Dil Desteği',
+        description: 'Türkçe, İngilizce, Almanca, Fransızca, İspanyolca, İtalyanca, Portekizce, Hollandaca.'
+      },
+      feature3: {
+        title: 'Güvenli Lisans',
+        description: 'Makine bazlı lisans sistemi, otomatik aktivasyon ve güvenli ödeme.'
+      },
+      feature4: {
+        title: 'Ticket Yönetimi',
+        description: 'Müşteri destek taleplerini takip edin, önceliklendirin ve çözün.'
+      },
+      feature5: {
+        title: 'Kullanıcı Yönetimi',
+        description: 'Rol bazlı erişim kontrolü, kullanıcı yetkilendirme ve güvenlik.'
+      },
+      feature6: {
+        title: 'Raporlama',
+        description: 'Detaylı raporlar, istatistikler ve işletme performans analizi.'
+      },
+      downloadTitle: 'Optiviera ERP İndir',
+      downloadDescription: 'İşletmeniz için en uygun platformu seçin',
+      platform1: {
+        name: 'Windows',
+        description: 'Windows 10/11 (x64)'
+      },
+      platform2: {
+        name: 'macOS',
+        description: 'macOS 10.12+ (Intel & Apple Silicon)'
+      },
+      platform3: {
+        name: 'Linux',
+        description: 'Ubuntu, Debian, CentOS'
+      },
+      download: 'İndir',
+      licenseTitle: 'Lisans Bilgileri',
+      licenseDescription: 'Optiviera ERP lisans seçenekleri',
+      license1: {
+        title: '<i class="fas fa-gift"></i> 1 Yıl Ücretsiz Deneme',
+        description: 'Tam özellikli 1 yıllık ücretsiz deneme süresi. Tüm özelliklere erişim, sınırsız kullanıcı, tam destek.'
+      },
+      license2: {
+        title: '<i class="fas fa-key"></i> Otomatik Aktivasyon',
+        description: 'Kurulum sonrası otomatik lisans aktivasyonu. Makine bazlı güvenlik, tek seferlik kurulum.'
+      },
+      license3: {
+        title: '<i class="fas fa-credit-card"></i> Kolay Satın Alma',
+        description: 'Güvenli ödeme sistemi, anında aktivasyon, 7/24 teknik destek ve güncelleme garantisi.'
+      },
+      contactTitle: 'İletişim',
+      contactDescription: 'Sorularınız için bizimle iletişime geçin',
+      contact1: {
+        title: '<i class="fas fa-envelope"></i> E-posta',
+        description: 'Teknik destek ve genel sorular'
+      },
+      contact2: {
+        title: '<i class="fas fa-globe"></i> Website',
+        description: 'Daha fazla bilgi ve hizmetler'
+      },
+      contact3: {
+        title: '<i class="fas fa-briefcase"></i> Kurumsal',
+        description: 'Kurumsal çözümler ve özel projeler'
+      }
     },
     about: {
       hero: {

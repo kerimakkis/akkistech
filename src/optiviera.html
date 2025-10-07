@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="tr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Optiviera ERP - Küçük İşletmeler İçin Eko Seviye ERP | AkkisTech</title>
+    <meta name="description" content="Optiviera ERP - Küçük işletmeler için tasarlanmış, modern ve kullanıcı dostu ERP çözümü. 1 yıl ücretsiz deneme, 8 dil desteği, tek tıkla kurulum.">
+    <meta name="keywords" content="ERP, küçük işletme, Optiviera, AkkisTech, ERP yazılımı, işletme yönetimi, ticket sistemi, raporlama">
+    <meta name="author" content="AkkisTech Software Agency">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Turkish">
+    <meta name="geo.region" content="TR">
+    <meta name="geo.placename" content="Türkiye">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://akkistech.com/optiviera/">
+    <meta property="og:title" content="Optiviera ERP - Küçük İşletmeler İçin Eko Seviye ERP">
+    <meta property="og:description" content="Küçük işletmeler için tasarlanmış, modern ve kullanıcı dostu ERP çözümü. 1 yıl ücretsiz deneme, 8 dil desteği, tek tıkla kurulum.">
+    <meta property="og:image" content="https://akkistech.com/images/OptivieraLogo.png">
+    <meta property="og:site_name" content="AkkisTech">
+    <meta property="og:locale" content="tr_TR">
+    
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://akkistech.com/optiviera/">
+    <meta property="twitter:title" content="Optiviera ERP - Küçük İşletmeler İçin Eko Seviye ERP">
+    <meta property="twitter:description" content="Küçük işletmeler için tasarlanmış, modern ve kullanıcı dostu ERP çözümü. 1 yıl ücretsiz deneme, 8 dil desteği, tek tıkla kurulum.">
+    <meta property="twitter:image" content="https://akkistech.com/images/OptivieraLogo.png">
+    
+    <link rel="icon shortcut" href="./favicon.ico">
+    <meta name="theme-color" content="#0101ec">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://use.typekit.net">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="./styles/base.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/shaders-on-scroll.sass" />
+    
+    <!-- Optiviera Specific Styles -->
+    <style>
+        .optiviera-hero {
+            background: linear-gradient(135deg, #0101ec1a 0%, #dd51b10d 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .optiviera-logo {
+            max-width: 480px;
+            width: 100%;
+            height: auto; /* preserve aspect ratio */
+            margin: 0 auto 2rem;
+            display: block;
+            filter: brightness(1.2) contrast(1.1);
+            transition: all .3s;
+        }
+        
+        .optiviera-logo:hover {
+            filter: brightness(1.4) contrast(1.2);
+            transform: scale(1.05);
+        }
+        
+        /* Mobile responsive logo */
+        @media (max-width: 800px) {
+            .optiviera-logo {
+                max-width: 400px;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .optiviera-logo {
+                max-width: 320px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .optiviera-logo {
+                max-width: 280px;
+            }
+        }
+        
+        @media (max-width: 400px) {
+            .optiviera-logo {
+                max-width: 240px;
+            }
+        }
+        
+        .optiviera-title {
+            font-size: min(8vw, 4rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+        
+        .optiviera-subtitle {
+            font-size: min(4vw, 1.5rem);
+            margin-bottom: 2rem;
+            color: #0101ec;
+            font-weight: 500;
+        }
+        
+        .optiviera-description {
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+            color: #fff;
+            opacity: 0.9;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .optiviera-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+        }
+        
+        .optiviera-btn {
+            background: #0101ec;
+            color: #fff;
+            border: 2px solid #0101ec;
+            border-radius: 50px;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all .3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .optiviera-btn:hover {
+            background: transparent;
+            color: #0101ec;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(1, 1, 236, 0.3);
+        }
+        
+        .optiviera-btn.secondary {
+            background: transparent;
+            color: #fff;
+            border-color: #fff;
+        }
+        
+        .optiviera-btn.secondary:hover {
+            background: #fff;
+            color: #0101ec;
+        }
+        
+        .optiviera-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 4rem 0;
+            padding: 0 2rem;
+        }
+        
+        .optiviera-feature {
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            transition: all .3s;
+            min-height: 280px; /* Sabit yükseklik */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .optiviera-feature:hover {
+            background: rgba(1, 1, 236, 0.1);
+            border-color: #0101ec;
+            transform: translateY(-5px);
+        }
+        
+        .optiviera-feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #0101ec;
+            transition: all 0.3s ease;
+        }
+        
+        .optiviera-feature-icon i {
+            transition: all 0.3s ease;
+        }
+        
+        .optiviera-feature:hover .optiviera-feature-icon {
+            color: #dd51b1;
+            transform: scale(1.1);
+        }
+        
+        .optiviera-feature:hover .optiviera-feature-icon i {
+            transform: rotate(5deg);
+        }
+        
+        .optiviera-feature h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+        
+        .optiviera-feature p {
+            color: #fff;
+            opacity: 0.8;
+            line-height: 1.6;
+        }
+        
+        .optiviera-download {
+            background: linear-gradient(135deg, #dd51b126 0%, #0101ec1a 100%);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .optiviera-download h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #fff;
+        }
+        
+        .optiviera-platforms {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .optiviera-platform {
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            transition: all .3s;
+            min-height: 300px; /* Sabit yükseklik */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .optiviera-platform:hover {
+            background: rgba(1, 1, 236, 0.1);
+            border-color: #0101ec;
+            transform: translateY(-5px);
+        }
+        
+        .optiviera-platform-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #0101ec;
+            transition: all 0.3s ease;
+        }
+        
+        .optiviera-platform-icon i {
+            transition: all 0.3s ease;
+        }
+        
+        .optiviera-platform:hover .optiviera-platform-icon {
+            color: #dd51b1;
+            transform: scale(1.1);
+        }
+        
+        .optiviera-platform:hover .optiviera-platform-icon i {
+            transform: rotate(5deg);
+        }
+        
+        .optiviera-platform h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+        
+        .optiviera-platform p {
+            color: #fff;
+            opacity: 0.8;
+            margin-bottom: 1.5rem;
+        }
+        
+        .optiviera-platform .optiviera-btn {
+            width: 100%;
+            justify-content: center;
+        }
+        
+        .optiviera-license {
+            background: linear-gradient(135deg, #0101ec33 0%, #dd51b11a 100%);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .optiviera-license h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #fff;
+        }
+        
+        .optiviera-license-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .optiviera-license-card {
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            min-height: 280px; /* Sabit yükseklik */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .optiviera-license-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #0101ec;
+        }
+        
+        .optiviera-license-card p {
+            color: #fff;
+            opacity: 0.8;
+            line-height: 1.6;
+        }
+        
+        .optiviera-contact {
+            background: linear-gradient(135deg, #0101ec1a 0%, #dd51b10d 100%);
+            padding: 4rem 2rem;
+            text-align: center;
+            margin-bottom: 15rem; /* Footer için çok daha fazla boşluk */
+        }
+        
+        .optiviera-contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #fff;
+        }
+        
+        .optiviera-contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .optiviera-contact-item {
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            min-height: 200px; /* Sabit yükseklik */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .optiviera-contact-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #0101ec;
+        }
+        
+        .optiviera-contact-item p {
+            color: #fff;
+            opacity: 0.8;
+            margin-bottom: 1rem;
+        }
+        
+        .optiviera-contact-item a {
+            color: #0101ec;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color .3s;
+        }
+        
+        .optiviera-contact-item a:hover {
+            color: #dd51b1;
+        }
+        
+        @media (max-width: 768px) {
+            .optiviera-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .optiviera-btn {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .optiviera-features,
+            .optiviera-platforms,
+            .optiviera-license-info,
+            .optiviera-contact-info {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    
+    <script>
+        document.documentElement.className = "js";
+        
+        // OS Detection and Download Function
+        function downloadForOS(event) {
+            event.preventDefault();
+            
+            const userAgent = navigator.userAgent.toLowerCase();
+            let downloadUrl = '';
+            let fileName = '';
+            
+            // Detect Operating System
+            if (userAgent.includes('windows')) {
+                downloadUrl = 'downloads/Optiviera ERP Setup 1.0.0.exe';
+                fileName = 'Optiviera ERP Setup 1.0.0.exe';
+            } else if (userAgent.includes('mac')) {
+                downloadUrl = 'downloads/Optiviera ERP-1.0.0.dmg';
+                fileName = 'Optiviera ERP-1.0.0.dmg';
+            } else if (userAgent.includes('linux')) {
+                downloadUrl = 'downloads/Optiviera ERP-1.0.0-arm64.AppImage';
+                fileName = 'Optiviera ERP-1.0.0-arm64.AppImage';
+            } else {
+                // Fallback to Windows if OS not detected
+                downloadUrl = 'downloads/Optiviera ERP Setup 1.0.0.exe';
+                fileName = 'Optiviera ERP Setup 1.0.0.exe';
+            }
+            
+            // Create download link and trigger download
+            const link = document.createElement('a');
+            link.href = downloadUrl;
+            link.download = fileName;
+            link.style.display = 'none';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            
+            // Optional: Show success message
+            const btn = document.getElementById('downloadBtn');
+            const originalText = btn.innerHTML;
+            btn.innerHTML = '<i class="fas fa-check"></i><span>İndirme Başladı!</span>';
+            btn.style.background = '#28a745';
+            
+            setTimeout(() => {
+                btn.innerHTML = originalText;
+                btn.style.background = '';
+            }, 3000);
+        }
+    </script>
+</head>
+<body class="loading">
+    <main>
+        <div id="site-header"></div>
+        <div class="content">
+            <div class="scroll__stage">
+                <div class="scroll__content">
+                    
+                    <!-- Hero Section -->
+                    <section class="optiviera-hero">
+                        <div>
+                            <img src="../public/images/OptivieraLogo.png" alt="Optiviera ERP" class="optiviera-logo">
+                            <h1 class="optiviera-title">Optiviera ERP</h1>
+                            <h2 class="optiviera-subtitle" data-translate="optiviera.subtitle">Küçük İşletmeler İçin Eko Seviye ERP</h2>
+                            <p class="optiviera-description" data-translate="optiviera.description">
+                                Modern teknoloji ile güçlendirilmiş işletme yönetimi. 
+                                Tek tıkla kurulum, otomatik lisans aktivasyonu, 1 yıllık ücretsiz deneme.
+                            </p>
+                            <div class="optiviera-buttons">
+                                <a href="#" class="optiviera-btn" id="downloadBtn" onclick="downloadForOS(event)">
+                                    <i class="fas fa-download"></i>
+                                    <span data-translate="optiviera.downloadNow">Hemen İndir</span>
+                                </a>
+                                <a href="#features" class="optiviera-btn secondary">
+                                    <i class="fas fa-info-circle"></i>
+                                    <span data-translate="optiviera.seeFeatures">Özellikleri Gör</span>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Features Section -->
+                    <section class="section" id="features">
+                        <div class="section__title">
+                            <h1 class="section__title-number"></h1>
+                            <h2 class="section__title-text" data-translate="optiviera.featuresTitle">Features</h2>
+                            <p class="section__title-arrow">
+                                <span>➤</span><br>
+                                <span>➤</span>
+                            </p>
+                        </div>
+                        <div class="section__paragraph">
+                            <h3 data-translate="optiviera.whyTitle">Neden Optiviera ERP?</h3>
+                            <p data-translate="optiviera.whyDescription">Modern teknoloji ile güçlendirilmiş işletme yönetimi</p>
+                        </div>
+                    </section>
+
+                    <div class="optiviera-features">
+                        <div class="optiviera-feature">
+                            <div class="optiviera-feature-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <h3 data-translate="optiviera.feature1.title">Hızlı Kurulum</h3>
+                            <p data-translate="optiviera.feature1.description">Tek tıkla kurulum, otomatik veritabanı oluşturma ve 1 yıllık ücretsiz deneme.</p>
+                        </div>
+                        <div class="optiviera-feature">
+                            <div class="optiviera-feature-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <h3 data-translate="optiviera.feature2.title">8 Dil Desteği</h3>
+                            <p data-translate="optiviera.feature2.description">Türkçe, İngilizce, Almanca, Fransızca, İspanyolca, İtalyanca, Portekizce, Hollandaca.</p>
+                        </div>
+                        <div class="optiviera-feature">
+                            <div class="optiviera-feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3 data-translate="optiviera.feature3.title">Güvenli Lisans</h3>
+                            <p data-translate="optiviera.feature3.description">Makine bazlı lisans sistemi, otomatik aktivasyon ve güvenli ödeme.</p>
+                        </div>
+                        <div class="optiviera-feature">
+                            <div class="optiviera-feature-icon">
+                                <i class="fas fa-ticket-alt"></i>
+                            </div>
+                            <h3 data-translate="optiviera.feature4.title">Ticket Yönetimi</h3>
+                            <p data-translate="optiviera.feature4.description">Müşteri destek taleplerini takip edin, önceliklendirin ve çözün.</p>
+                        </div>
+                        <div class="optiviera-feature">
+                            <div class="optiviera-feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3 data-translate="optiviera.feature5.title">Kullanıcı Yönetimi</h3>
+                            <p data-translate="optiviera.feature5.description">Rol bazlı erişim kontrolü, kullanıcı yetkilendirme ve güvenlik.</p>
+                        </div>
+                        <div class="optiviera-feature">
+                            <div class="optiviera-feature-icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <h3 data-translate="optiviera.feature6.title">Raporlama</h3>
+                            <p data-translate="optiviera.feature6.description">Detaylı raporlar, istatistikler ve işletme performans analizi.</p>
+                        </div>
+                    </div>
+
+                    <!-- Download Section -->
+                    <section class="optiviera-download" id="download">
+                        <h2 data-translate="optiviera.downloadTitle">Optiviera ERP İndir</h2>
+                        <p data-translate="optiviera.downloadDescription">İşletmeniz için en uygun platformu seçin</p>
+                        
+                        <div class="optiviera-platforms">
+                            <div class="optiviera-platform">
+                                <div class="optiviera-platform-icon">
+                                    <i class="fab fa-windows"></i>
+                                </div>
+                                <h3 data-translate="optiviera.platform1.name">Windows</h3>
+                                <p data-translate="optiviera.platform1.description">Windows 10/11 (x64)</p>
+                                <a href="downloads/Optiviera ERP Setup 1.0.0.exe" class="optiviera-btn">
+                                    <i class="fas fa-download"></i>
+                                    <span data-translate="optiviera.download">İndir</span> (68.7 MB)
+                                </a>
+                            </div>
+                            <div class="optiviera-platform">
+                                <div class="optiviera-platform-icon">
+                                    <i class="fab fa-apple"></i>
+                                </div>
+                                <h3 data-translate="optiviera.platform2.name">macOS</h3>
+                                <p data-translate="optiviera.platform2.description">macOS 10.12+ (Intel & Apple Silicon)</p>
+                                <a href="downloads/Optiviera ERP-1.0.0.dmg" class="optiviera-btn">
+                                    <i class="fas fa-download"></i>
+                                    <span data-translate="optiviera.download">İndir</span> (91.3 MB)
+                                </a>
+                            </div>
+                            <div class="optiviera-platform">
+                                <div class="optiviera-platform-icon">
+                                    <i class="fab fa-linux"></i>
+                                </div>
+                                <h3 data-translate="optiviera.platform3.name">Linux</h3>
+                                <p data-translate="optiviera.platform3.description">Ubuntu, Debian, CentOS</p>
+                                <a href="downloads/Optiviera ERP-1.0.0-arm64.AppImage" class="optiviera-btn">
+                                    <i class="fas fa-download"></i>
+                                    <span data-translate="optiviera.download">İndir</span> (95.5 MB)
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- License Section -->
+                    <section class="optiviera-license">
+                        <h2 data-translate="optiviera.licenseTitle">Lisans Bilgileri</h2>
+                        <p data-translate="optiviera.licenseDescription">Optiviera ERP lisans seçenekleri</p>
+                        
+                        <div class="optiviera-license-info">
+                            <div class="optiviera-license-card">
+                                <h3 data-translate="optiviera.license1.title"><i class="fas fa-gift"></i> 1 Yıl Ücretsiz Deneme</h3>
+                                <p data-translate="optiviera.license1.description">Tam özellikli 1 yıllık ücretsiz deneme süresi. Tüm özelliklere erişim, sınırsız kullanıcı, tam destek.</p>
+                            </div>
+                            <div class="optiviera-license-card">
+                                <h3 data-translate="optiviera.license2.title"><i class="fas fa-key"></i> Otomatik Aktivasyon</h3>
+                                <p data-translate="optiviera.license2.description">Kurulum sonrası otomatik lisans aktivasyonu. Makine bazlı güvenlik, tek seferlik kurulum.</p>
+                            </div>
+                            <div class="optiviera-license-card">
+                                <h3 data-translate="optiviera.license3.title"><i class="fas fa-credit-card"></i> Kolay Satın Alma</h3>
+                                <p data-translate="optiviera.license3.description">Güvenli ödeme sistemi, anında aktivasyon, 7/24 teknik destek ve güncelleme garantisi.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Contact Section -->
+                    <section class="optiviera-contact">
+                        <h2 data-translate="optiviera.contactTitle">İletişim</h2>
+                        <p data-translate="optiviera.contactDescription">Sorularınız için bizimle iletişime geçin</p>
+                        
+                        <div class="optiviera-contact-info">
+                            <div class="optiviera-contact-item">
+                                <h3 data-translate="optiviera.contact1.title"><i class="fas fa-envelope"></i> E-posta</h3>
+                                <p data-translate="optiviera.contact1.description">Teknik destek ve genel sorular</p>
+                                <a href="mailto:support@akkistech.com">support@akkistech.com</a>
+                            </div>
+                            <div class="optiviera-contact-item">
+                                <h3 data-translate="optiviera.contact2.title"><i class="fas fa-globe"></i> Website</h3>
+                                <p data-translate="optiviera.contact2.description">Daha fazla bilgi ve hizmetler</p>
+                                <a href="https://akkistech.com">akkistech.com</a>
+                            </div>
+                            <div class="optiviera-contact-item">
+                                <h3 data-translate="optiviera.contact3.title"><i class="fas fa-briefcase"></i> Kurumsal</h3>
+                                <p data-translate="optiviera.contact3.description">Kurumsal çözümler ve özel projeler</p>
+                                <a href="mailto:kerimakkis@gmail.com">kerimakkis@gmail.com</a>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+            <div class="layout__line"></div>
+        </div>
+    </main>
+    
+    <div id="site-footer"></div>
+    
+    <script type="module" src="./app/layout.js"></script>
+    <script type="module" src="./app/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+</body>
+</html>

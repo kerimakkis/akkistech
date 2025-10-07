@@ -143,6 +143,19 @@ canvas.webgl
       @media (max-width: 48em)
         font-size: min(12vw, 6rem)
         
+      // Additional mobile adjustments for iPhone 15 and smaller
+      @media (max-width: 800px)
+        font-size: min(14vw, 7rem)
+        
+      @media (max-width: 600px)
+        font-size: min(12vw, 6rem)
+        
+      @media (max-width: 480px)
+        font-size: min(10vw, 5rem)
+        
+      @media (max-width: 400px)
+        font-size: min(9vw, 4.5rem)
+        
     &-arrow
       font-size: min(9vw, 6rem)
       
@@ -153,6 +166,19 @@ canvas.webgl
       span
         display: inline-block
         transform: rotate(90deg)
+        
+      // Mobile responsive arrow sizing
+      @media (max-width: 800px)
+        font-size: min(8vw, 5rem)
+        
+      @media (max-width: 600px)
+        font-size: min(7vw, 4rem)
+        
+      @media (max-width: 480px)
+        font-size: min(6vw, 3.5rem)
+        
+      @media (max-width: 400px)
+        font-size: min(5vw, 3rem)
 
     &-logo
       display: flex
@@ -180,6 +206,23 @@ canvas.webgl
 
     @media (max-width: 64em)
       font-size: 1.2rem
+      
+    // Mobile responsive paragraph sizing
+    @media (max-width: 800px)
+      font-size: 1.1rem
+      max-width: 18ch
+      
+    @media (max-width: 600px)
+      font-size: 1rem
+      max-width: 16ch
+      
+    @media (max-width: 480px)
+      font-size: 0.9rem
+      max-width: 14ch
+      
+    @media (max-width: 400px)
+      font-size: 0.85rem
+      max-width: 12ch
     
   &__button
     @extend %font-regular
@@ -198,6 +241,27 @@ canvas.webgl
     &:hover,
     &:focus
       border: 2px solid $color-2
+      
+    // Mobile responsive button sizing
+    @media (max-width: 800px)
+      margin: 4ch 0
+      padding: 1.5ch 4ch
+      font-size: 0.75em
+      
+    @media (max-width: 600px)
+      margin: 3ch 0
+      padding: 1.2ch 3ch
+      font-size: 0.7em
+      
+    @media (max-width: 480px)
+      margin: 2.5ch 0
+      padding: 1ch 2.5ch
+      font-size: 0.65em
+      
+    @media (max-width: 400px)
+      margin: 2ch 0
+      padding: 0.8ch 2ch
+      font-size: 0.6em
      
 .layout
   &__line
@@ -487,7 +551,7 @@ canvas.webgl
   
   text-align: center
   z-index: 1000
-  padding: 3rem 5vw
+  padding: 1.5rem 2rem
   background: transparent
   
   @media screen and (min-width: 53em)
@@ -502,6 +566,16 @@ canvas.webgl
     grid-template-columns: 66% 34%
     grid-template-rows: auto auto auto
     grid-template-areas: "brand nav" "... ..." "... language"
+  
+  // Mobile responsive adjustments for iPhone 15 and smaller screens
+  @media screen and (max-width: 800px)
+    padding: 1rem 1.5rem
+    
+  @media screen and (max-width: 600px)
+    padding: 0.75rem 1rem
+    
+  @media screen and (max-width: 480px)
+    padding: 0.5rem 0.75rem
 
 .header__brand
   display: flex
@@ -511,6 +585,16 @@ canvas.webgl
   @media screen and (max-width: 53em)
     flex-direction: column
     gap: 0.5rem
+    
+  // Mobile responsive adjustments
+  @media screen and (max-width: 800px)
+    gap: 0.75rem
+    
+  @media screen and (max-width: 600px)
+    gap: 0.5rem
+    
+  @media screen and (max-width: 480px)
+    gap: 0.25rem
 
 .header__logo
   flex-shrink: 0
@@ -521,23 +605,65 @@ canvas.webgl
   object-fit: contain
   display: block
   z-index: 1001
+  transition: all 0.3s ease
   
   @media screen and (max-width: 53em)
     width: 48px
     height: 48px
+    
+  // Mobile responsive logo sizing
+  @media screen and (max-width: 800px)
+    width: 44px
+    height: 44px
+    
+  @media screen and (max-width: 600px)
+    width: 40px
+    height: 40px
+    
+  @media screen and (max-width: 480px)
+    width: 36px
+    height: 36px
+    
+  @media screen and (max-width: 400px)
+    width: 32px
+    height: 32px
 
 .header__brand-text
   display: flex
   flex-direction: column
   gap: 0.25rem
+  
+  // Mobile responsive adjustments
+  @media screen and (max-width: 800px)
+    gap: 0.2rem
+    
+  @media screen and (max-width: 600px)
+    gap: 0.15rem
+    
+  @media screen and (max-width: 480px)
+    gap: 0.1rem
 
 .header__title
   font-size: 1.2rem
   margin: 0
   font-weight: 600
+  transition: all 0.3s ease
   
   @media screen and (min-width: 53em)
     font-size: 1.4rem
+    
+  // Mobile responsive title sizing
+  @media screen and (max-width: 800px)
+    font-size: 1.1rem
+    
+  @media screen and (max-width: 600px)
+    font-size: 1rem
+    
+  @media screen and (max-width: 480px)
+    font-size: 0.9rem
+    
+  @media screen and (max-width: 400px)
+    font-size: 0.85rem
 
 .header__home
   color: inherit
@@ -553,6 +679,20 @@ canvas.webgl
   opacity: 0.7
   font-size: 0.9rem
   font-weight: 400
+  transition: all 0.3s ease
+  
+  // Mobile responsive tagline sizing
+  @media screen and (max-width: 800px)
+    font-size: 0.8rem
+    
+  @media screen and (max-width: 600px)
+    font-size: 0.75rem
+    
+  @media screen and (max-width: 480px)
+    font-size: 0.7rem
+    
+  @media screen and (max-width: 400px)
+    font-size: 0.65rem
 
 .header__nav
   display: inline
@@ -564,9 +704,28 @@ canvas.webgl
 
   a
     pointer-events: auto
+    font-size: 0.9rem
+    transition: all 0.3s ease
 
     &:not(:last-child)
       margin-right: 1rem
+      
+    // Mobile responsive nav links
+    @media screen and (max-width: 800px)
+      font-size: 0.85rem
+      margin-right: 0.75rem
+      
+    @media screen and (max-width: 600px)
+      font-size: 0.8rem
+      margin-right: 0.5rem
+      
+    @media screen and (max-width: 480px)
+      font-size: 0.75rem
+      margin-right: 0.4rem
+      
+    @media screen and (max-width: 400px)
+      font-size: 0.7rem
+      margin-right: 0.3rem
 
 .header__language
   display: flex
@@ -580,6 +739,19 @@ canvas.webgl
     align-self: end
     margin-top: 0.75rem
     padding-left: 1rem
+    
+  // Mobile responsive language buttons
+  @media screen and (max-width: 800px)
+    gap: 0.4rem
+    margin-top: 0.75rem
+    
+  @media screen and (max-width: 600px)
+    gap: 0.3rem
+    margin-top: 0.5rem
+    
+  @media screen and (max-width: 480px)
+    gap: 0.25rem
+    margin-top: 0.4rem
 
 .lang-btn
   @extend %font-regular
@@ -610,6 +782,23 @@ canvas.webgl
 
   &:active
     transform: translateY(0)
+    
+  // Mobile responsive language buttons
+  @media screen and (max-width: 800px)
+    padding: 0.35rem 0.5rem
+    font-size: 0.6rem
+    
+  @media screen and (max-width: 600px)
+    padding: 0.3rem 0.4rem
+    font-size: 0.55rem
+    
+  @media screen and (max-width: 480px)
+    padding: 0.25rem 0.35rem
+    font-size: 0.5rem
+    
+  @media screen and (max-width: 400px)
+    padding: 0.2rem 0.3rem
+    font-size: 0.45rem
 
 // Service Page Specific Styles
 .service-list

@@ -76,6 +76,7 @@ function getFooterHTML() {
           <li><a href="ai-data.html" data-translate="services.ai.heading">AI Solutions</a></li>
           <li><a href="support.html" data-translate="services.support.heading">Support</a></li>
           <li><a href="consulting.html" data-translate="services.consulting.heading">Consulting</a></li>
+          <li><a href="optiviera.html">Optiviera ERP</a></li>
         </ul>
       </div>
       <div class="footer__section">
@@ -96,6 +97,7 @@ function getFooterHTML() {
         </p>
       </div>
     </div>
+    
     <div class="footer__bottom">
       <p data-translate="footer.copyright">© 2024 akkistech. Alle Rechte vorbehalten.</p>
       <p class="footer__credits"><span data-translate="footer.credits">inspired by</span> <a href="https://tympanus.net/codrops" target="_blank">Codrops</a></p>
