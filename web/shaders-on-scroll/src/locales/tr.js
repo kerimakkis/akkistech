@@ -1,0 +1,241 @@
+export default {
+  "nav": {
+    "home": "Ana Sayfa",
+    "services": "Hizmetler",
+    "contact": "İletişim",
+    "about": "Hakkımızda"
+  },
+  "hero": {
+    "tagline": "Yenilikçi Yazılım Çözümleri"
+  },
+  "services": {
+    "web": {
+      "title": "Web",
+      "heading": "Web Geliştirme",
+      "description": "Kurumsal web siteleri, E-Ticaret çözümleri, Landing sayfalar, CMS entegrasyonu, Web performans optimizasyonu",
+      "cta": "Daha Fazla"
+    },
+    "mobile": {
+      "title": "Mobil",
+      "heading": "Mobil Geliştirme",
+      "description": "iOS & Android Uygulamaları, React Native, Flutter, PWA, App Store Yayınlama, IoT Entegrasyonu",
+      "cta": "Daha Fazla"
+    },
+    "backend": {
+      "title": "Backend",
+      "heading": "Backend & API Hizmetleri",
+      "description": "Özel Backend, REST & GraphQL API'lar, Veritabanı Tasarımı, ERP/CRM Entegrasyonu, Microservices",
+      "cta": "Daha Fazla"
+    },
+    "design": {
+      "title": "Tasarım",
+      "heading": "UI/UX & Tasarım",
+      "description": "Kullanıcı Arayüzü Tasarımı, Prototipleme, UX Araştırması, Kurumsal Kimlik, Animasyon & Micro-etkileşimler",
+      "cta": "Daha Fazla"
+    },
+    "cloud": {
+      "title": "Bulut",
+      "heading": "Bulut & DevOps",
+      "description": "AWS, Azure, GCP, Docker, Kubernetes, CI/CD Pipeline'ları, Yüksek Erişilebilirlik, Felaket Kurtarma",
+      "cta": "Daha Fazla"
+    },
+    "security": {
+      "title": "Güvenlik",
+      "heading": "Güvenlik & Uyumluluk",
+      "description": "PenTest, Güvenlik Açığı Taramaları, SSL/TLS, WAF, DDoS Koruması, GDPR Uyumluluğu, Veri Şifreleme",
+      "cta": "Daha Fazla"
+    },
+    "seo": {
+      "title": "SEO",
+      "heading": "SEO & Dijital Pazarlama",
+      "description": "Teknik SEO, İçerik Stratejisi, Google Analytics, Online Reklamcılık, Sosyal Medya Entegrasyonu",
+      "cta": "Daha Fazla"
+    },
+    "ai": {
+      "title": "AI",
+      "heading": "AI & Veri Hizmetleri",
+      "description": "AI Chatbot'lar, Öneri Sistemleri, NLP, Bilgisayarlı Görü, Veri Bilimi, Tahmine Dayalı Analitik, RPA",
+      "cta": "Daha Fazla"
+    },
+    "support": {
+      "title": "Destek",
+      "heading": "Bakım & Destek",
+      "description": "Hosting Yönetimi, Yazılım Güncellemeleri, 7/24 SLA Desteği, Hata Düzeltmeleri, Kullanıcı Eğitimi",
+      "cta": "Daha Fazla"
+    },
+    "consulting": {
+      "title": "Danışmanlık",
+      "heading": "Danışmanlık & Strateji",
+      "description": "Dijital Dönüşüm, Teknoloji Danışmanlığı, Ürün Stratejisi, Agile Koçluk, AI-Hazır Planlama",
+      "cta": "Daha Fazla"
+    }
+  },
+  "contact": {
+    "title": "İletişim",
+    "heading": "Konuşalım",
+    "description": "Bir sonraki projeniz için hazır mısınız?<br>Uzman ekibimizle iletişime geçin.",
+    "email": "E-posta",
+    "phone": "Telefon",
+    "location": "Konum",
+    "cta": "E-posta Gönder",
+    "formTitle": "İletişim Formu",
+    "formHeading": "Bize Mesaj Gönderin",
+    "formName": "Adınız *",
+    "formEmail": "E-posta Adresiniz *",
+    "formPhone": "Telefon Numarası",
+    "formMessage": "Mesajınız *",
+    "formServiceSelect": "Hizmet Seçin (İsteğe Bağlı)",
+    "formSubmit": "Mesaj Gönder",
+    "formSending": "Gönderiliyor...",
+    "quickContactTitle": "Hızlı İletişim",
+    "quickContactHeading": "Bizimle İletişime Geçin",
+    "whatsapp": "WhatsApp",
+    "call": "Ara",
+    "locationTitle": "Konumumuz",
+    "locationHeading": "Bremen'de Bizi Bulun",
+    "bremenOffice": "Bremen Ofisi",
+    "bremenAddress": "Findorff<br>28215 Bremen<br>Almanya",
+    "servicesHeading": "Neler Sunuyoruz"
+  },
+  "footer": {
+    "tagline": "Full-Stack Geliştirme • AI Çözümleri • Bulut Hizmetleri",
+    "company": "Şirket",
+    "about": "Hakkımızda",
+    "contact": "İletişim",
+    "imprint": "Künye",
+    "privacy": "Gizlilik",
+    "copyright": "© 2024 akkistech. Tüm hakları saklıdır.",
+    "credits": "Shader efektleri şundan ilham alınmıştır"
+  },
+  "common": {
+    "getStarted": "Başlayalım",
+    "services": "Hizmetler",
+    "technologies": "Teknolojiler",
+    "techStack": "Teknoloji Yığını",
+    "process": "Süreç",
+    "tools": "Araçlar"
+  },
+  "legal": {
+    "backToHome": "Ana Sayfaya Dön",
+    "imprint": "Künye",
+    "privacy": "Gizlilik Politikası"
+  },
+  "about": {
+    "hero": {
+      "title": "Hakkımızda",
+      "heading": "Biz Kimiz",
+      "description": "Bremen, Almanya merkezli tutkulu yazılım geliştiricileri, tasarımcılar ve dijital stratejistlerden oluşan bir ekibiz. Kuruluşumuzdan bu yana, iş başarısını destekleyen son teknoloji çözümler sunmaya kararlıyız."
+    },
+    "mission": {
+      "title": "Misyon",
+      "heading": "Misyonumuz",
+      "description": "İşletmeleri, son teknoloji ile olağanüstü kullanıcı deneyimini birleştiren yenilikçi yazılım çözümleriyle güçlendirmek. Karmaşık teknik zorluklar ile zarif, pratik çözümler arasında köprü kuruyoruz."
+    },
+    "values": {
+      "title": "Değerler",
+      "heading": "Neyi Temsil Ediyoruz",
+      "description": "<strong>İnovasyon:</strong> Teknoloji trendlerinin önündeyiz<br><strong>Kalite:</strong> Her kod satırında mükemmellik<br><strong>Ortaklık:</strong> Sizin başarınız bizim başarımız<br><strong>Şeffaflık:</strong> Net iletişim, dürüst zaman çizelgeleri<br><strong>Sürdürülebilirlik:</strong> Uzun vadeli çözümler, hızlı düzeltmeler değil"
+    },
+    "expertise": {
+      "title": "Uzmanlık",
+      "heading": "Uzmanlık Alanlarımız",
+      "description": "Çeşitli sektörlerde yıllarca deneyime sahip olarak uzmanlaştığımız alanlar:<br><br>• Full-Stack Web & Mobil Geliştirme<br>• AI & Makine Öğrenmesi Entegrasyonu<br>• Bulut Mimarisi & DevOps<br>• UI/UX Tasarım & Kullanıcı Araştırması<br>• Dijital Dönüşüm Danışmanlığı<br>• Kurumsal Yazılım Çözümleri"
+    },
+    "tech": {
+      "title": "Teknoloji",
+      "heading": "Teknoloji Yığını",
+      "description": "Modern, kanıtlanmış teknolojilerle çalışıyoruz:<br><br><strong>Frontend:</strong> React, Vue, Angular, Next.js, WebGL<br><strong>Backend:</strong> Node.js, Python, Java, Go, .NET<br><strong>Mobil:</strong> React Native, Flutter, Swift, Kotlin<br><strong>AI/ML:</strong> TensorFlow, PyTorch, OpenAI, LangChain<br><strong>Bulut:</strong> AWS, Azure, GCP, Docker, Kubernetes<br><strong>Veritabanı:</strong> PostgreSQL, MongoDB, Redis, Elasticsearch"
+    },
+    "approach": {
+      "title": "Yaklaşım",
+      "heading": "Nasıl Çalışıyoruz",
+      "description": "İşbirliğine odaklanarak çevik metodolojileri takip ediyoruz:<br><br>1. <strong>Keşif:</strong> İhtiyaçlarınızı ve hedeflerinizi anlama<br>2. <strong>Strateji:</strong> Optimal çözümü planlama<br>3. <strong>Tasarım:</strong> Sezgisel kullanıcı deneyimleri yaratma<br>4. <strong>Geliştirme:</strong> En iyi uygulamalarla inşa etme<br>5. <strong>Test:</strong> Kalite ve performans sağlama<br>6. <strong>Dağıtım:</strong> Sorunsuz başlatma ve izleme<br>7. <strong>Destek:</strong> Sürekli bakım ve iyileştirmeler"
+    },
+    "location": {
+      "title": "Konum",
+      "heading": "Bremen'de Yerleşik",
+      "description": "Almanya'nın Bremen şehrinin kalbinde yer alan firmamız, yerel ve küresel müşterilere hizmet vermektedir. Almanya'nın büyük teknoloji merkezlerinden birindeki stratejik konumumuz, en son sektör gelişmeleriyle bağlantıda kalmamızı ve müşterilerimizle yakın ilişkiler kurmamızı sağlar."
+    },
+    "cta": {
+      "title": "İletişim",
+      "heading": "Birlikte Çalışalım",
+      "description": "Bir sonraki projenize başlamaya hazır mısınız? Sizden haber almak isteriz.<br>Fikirlerinizi gerçeğe dönüştürmek için nasıl yardımcı olabileceğimizi görüşelim.",
+      "button": "İletişime Geçin"
+    }
+  },
+  "optiviera": {
+    "subtitle": "Küçük İşletmeler İçin Eko Seviye ERP",
+    "description": "Modern teknoloji ile güçlendirilmiş işletme yönetimi. Tek tıkla kurulum, otomatik lisans aktivasyonu, 1 yıllık ücretsiz deneme.",
+    "downloadNow": "Hemen İndir",
+    "seeFeatures": "Özellikleri Gör",
+    "whyTitle": "Neden Optiviera ERP?",
+    "whyDescription": "Modern teknoloji ile güçlendirilmiş işletme yönetimi",
+    "feature1": {
+      "title": "Hızlı Kurulum",
+      "description": "Tek tıkla kurulum, otomatik veritabanı oluşturma ve 1 yıllık ücretsiz deneme."
+    },
+    "feature2": {
+      "title": "8 Dil Desteği",
+      "description": "Türkçe, İngilizce, Almanca, Fransızca, İspanyolca, İtalyanca, Portekizce, Hollandaca."
+    },
+    "feature3": {
+      "title": "Güvenli Lisans",
+      "description": "Makine bazlı lisans sistemi, otomatik aktivasyon ve güvenli ödeme."
+    },
+    "feature4": {
+      "title": "Ticket Yönetimi",
+      "description": "Müşteri destek taleplerini takip edin, önceliklendirin ve çözün."
+    },
+    "feature5": {
+      "title": "Kullanıcı Yönetimi",
+      "description": "Rol bazlı erişim kontrolü, kullanıcı yetkilendirme ve güvenlik."
+    },
+    "feature6": {
+      "title": "Raporlama",
+      "description": "Detaylı raporlar, istatistikler ve işletme performans analizi."
+    },
+    "downloadTitle": "Optiviera ERP İndir",
+    "downloadDescription": "İşletmeniz için en uygun platformu seçin",
+    "download": "İndir",
+    "platform1": {
+      "name": "Windows",
+      "description": "Windows 10/11 (x64)"
+    },
+    "platform2": {
+      "name": "macOS",
+      "description": "macOS 10.12+ (Intel & Apple Silicon)"
+    },
+    "platform3": {
+      "name": "Linux",
+      "description": "Ubuntu, Debian, CentOS"
+    },
+    "licenseTitle": "Lisans Bilgileri",
+    "licenseDescription": "Optiviera ERP lisans seçenekleri",
+    "license1": {
+      "title": "🎁 1 Yıl Ücretsiz Deneme",
+      "description": "Tam özellikli 1 yıllık ücretsiz deneme süresi. Tüm özelliklere erişim, sınırsız kullanıcı, tam destek."
+    },
+    "license2": {
+      "title": "🔑 Otomatik Aktivasyon",
+      "description": "Kurulum sonrası otomatik lisans aktivasyonu. Makine bazlı güvenlik, tek seferlik kurulum."
+    },
+    "license3": {
+      "title": "💳 Kolay Satın Alma",
+      "description": "Güvenli ödeme sistemi, anında aktivasyon, 7/24 teknik destek ve güncelleme garantisi."
+    },
+    "contactTitle": "İletişim",
+    "contactDescription": "Sorularınız için bizimle iletişime geçin",
+    "contact1": {
+      "title": "📧 E-posta",
+      "description": "Teknik destek ve genel sorular"
+    },
+    "contact2": {
+      "title": "🌐 Website",
+      "description": "Daha fazla bilgi ve hizmetler"
+    },
+    "contact3": {
+      "title": "💼 Kurumsal",
+      "description": "Kurumsal çözümler ve özel projeler"
+    }
+  }
+};

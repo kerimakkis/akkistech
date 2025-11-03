@@ -1,0 +1,11 @@
+/node_modules
+/.cache
+/.parcel-cache
+package-lock.json
+dist/
+node_modules/
+.parcel-cache/
+akkistech-website@1.0.0
+
+# Large download files (hosted separately)
+src/downloads/

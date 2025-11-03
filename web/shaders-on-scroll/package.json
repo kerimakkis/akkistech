@@ -1,0 +1,31 @@
+{
+  "name": "akkistech-website",
+  "version": "1.0.0",
+  "description": "akkistech corporate website with WebGL shader effects",
+  "scripts": {
+    "start": "parcel src/*.html --open",
+    "clean": "rm -rf dist/*",
+    "build:parcel": "parcel build src/*.html --no-content-hash --no-source-maps --public-url ./",
+    "copy:seo": "cp src/sitemap.xml dist/sitemap.xml && cp src/robots.txt dist/robots.txt && cp src/BingSiteAuth.xml dist/BingSiteAuth.xml",
+    "build": "npm run clean && npm run build:parcel && npm run copy:seo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Faboolea/shaders-on-scroll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.16.0",
+    "@parcel/transformer-glsl": "^2.16.0",
+    "@parcel/transformer-jsonld": "^2.16.0",
+    "@parcel/transformer-sass": "^2.16.0",
+    "parcel": "latest"
+  },
+  "dependencies": {
+    "gsap": "^3.7.0",
+    "i18next": "^25.6.0",
+    "three": "^0.129.0"
+  }
+}
