@@ -53,6 +53,17 @@ Build for production:
 npm run build
 ```
 
+## 🚀 Deployment
+
+Deploy to akkisHost server:
+
+```bash
+cd /Users/kerimakkis/akkistech/web/shaders-on-scroll
+rsync -avh --delete ./dist/ kerim@192.168.178.20:/mnt/data/volumes/websites/akkistech/html/ && ssh kerim@192.168.178.20 'docker restart web-akkissoftware'
+```
+
+For detailed deployment instructions, see [DEPLOY.md](DEPLOY.md)
+
 ## 🌍 Multi-language Support
 
 The website automatically detects browser language and supports:
